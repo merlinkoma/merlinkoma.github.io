@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap");
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 body header {
   margin: 0;
   padding: 0;
   font-family: Caveat;
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-color: #263741;
   display: flex;
 }
@@ -52,23 +55,65 @@ body header div.name div.line {
   width: 30%;
   margin: 15px auto;
 }
-body section.about {
-  padding: 0;
-  margin: 0;
-  height: 200px;
+body main section.aboutme {
+  background-color: #263741;
+  color: #F1F1ED;
+  font-family: Montserrat Alternates;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main section.aboutme h3 {
+  padding: 10px;
+  margin: 0 auto;
+  width: 80vw;
+}
+body main section.aboutme p.aboutme {
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 40vw 30px 10vw;
+  width: 50vw;
+  text-align: justify;
+}
+body main section#main {
+  width: 200vw;
+  transition: 500ms ease-in-out;
+  height: 600px;
+  display: flex;
+}
+body main section#main section.devweb {
+  width: 80vw;
   background-color: #8CA2AA;
 }
-body section.about h3 {
-  padding: 0;
-  margin: 0;
-}
-body section.about p.aboutme {
-  padding: 0;
-  margin: 0;
-}
-body section.devweb {
-  height: 300px;
+body main section#main section.slide {
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  width: 40vw;
+  color: #F1F1ED;
   background-color: #907D50;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main section#main section.slide div.chevron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section#main section.slide div.chevron label {
+  font-size: 1.2rem;
+  padding: 2%;
+}
+body main section#main section.slide div.chevron img {
+  width: 20%;
+  max-height: 20%;
+}
+body main section#main section.slide div.chevron img:hover {
+  width: 22%;
+}
+body main section#main section.registrar {
+  width: 80vw;
+  background-color: #93968F;
 }
 
 /*# sourceMappingURL=index.css.map */

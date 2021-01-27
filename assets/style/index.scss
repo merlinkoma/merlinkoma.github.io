@@ -1,74 +1,138 @@
 @import "variables";
 
-body{
-    margin:0;
-    padding: 0;
-    header{
-        margin:0;
-        padding: 0;
-        font-family: Caveat;
-        width: 100%;
-        height: 400px;
+body {
+    margin    : 0;
+    padding   : 0;
+    width     : 100vw;
+    overflow-x: hidden;
+
+    header {
+        margin          : 0;
+        padding         : 0;
+        font-family     : Caveat;
+        width           : 100%;
+        height          : 350px;
         background-color: $blue;
-        display: flex;
-        div.image{
-            width: 30%;
-            display: flex;
+        display         : flex;
+
+        div.image {
+            width      : 30%;
+            display    : flex;
             align-items: center;
-            img{
-                width: 200px;
-                height: auto;
+
+            img {
+                width        : 200px;
+                height       : auto;
                 // transform: translate(-350px, -68px);
-                z-index: 1;
-                box-shadow: 0 0 20px #8CA2AA;
+                z-index      : 1;
+                box-shadow   : 0 0 20px #8CA2AA;
                 border-radius: 10px;
             }
         }
-        div.name{
-            width: 70%;
-            display: flex;
-            flex-direction: column;
+
+        div.name {
+            width          : 70%;
+            display        : flex;
+            flex-direction : column;
             justify-content: center;
-            z-index: 2;
-            div.nametitle{
-                color: $gold;
-                font-size: 75px;
+            z-index        : 2;
+
+            div.nametitle {
+                color      : $gold;
+                font-size  : 75px;
                 font-weight: 700;
-                width: 80%;
-                margin: 0 auto;
-                text-align: center;
+                width      : 80%;
+                margin     : 0 auto;
+                text-align : center;
             }
-            div.subtitle{
-                color: $light;
-                font-size: 30px;
+
+            div.subtitle {
+                color      : $light;
+                font-size  : 30px;
                 font-weight: 500;
-                width: 80%;
-                margin: 0 auto;
-                text-align: center;
+                width      : 80%;
+                margin     : 0 auto;
+                text-align : center;
             }
-            div.line{
+
+            div.line {
                 border-top: solid 3px $gold;
-                width: 30%;
-                margin: 15px auto;
+                width     : 30%;
+                margin    : 15px auto;
             }
         }
     }
-    section.about{
-        padding: 0;
-        margin: 0;
-        height: 200px;
-        background-color: #8CA2AA;
-        h3{
-            padding: 0;
-            margin: 0;
+
+    main {
+        section.aboutme {
+            background-color: $blue;
+            color           : $light;
+            font-family     : Montserrat Alternates;
+            display         : flex;
+            flex-direction  : column;
+            justify-content : center;
+
+            h3 {
+                padding: 10px;
+                margin : 0 auto;
+                width  : 80vw;
+            }
+
+            p.aboutme {
+                height    : auto;
+                margin    : 0 auto;
+                padding   : 10px 40vw 30px 10vw;
+                width     : 50vw;
+                text-align: justify;
+            }
         }
-        p.aboutme{
-            padding: 0;
-            margin: 0;
+
+        section#main {
+            width     : 200vw;
+            transition: 500ms ease-in-out;
+            height    : 600px;
+            display   : flex;
+
+            section.devweb {
+                width           : 80vw;
+                background-color: $blue-light;
+            }
+
+            section.slide {
+                font-family     : Montserrat Alternates;
+                font-weight     : bold;
+                width           : 40vw;
+                color           : $light;
+                background-color: $gold;
+                display         : flex;
+                justify-content : space-around;
+                align-items     : center;
+
+                div.chevron {
+                    display       : flex;
+                    flex-direction: column;
+                    align-items   : center;
+
+                    label {
+                        font-size: 1.2rem;
+                        padding  : 2%;
+                    }
+
+                    img {
+                        width     : 20%;
+                        max-height: 20%;
+
+                        &:hover {
+                            width: 22%;
+                        }
+                    }
+                }
+            }
+
+            section.registrar {
+                width           : 80vw;
+                background-color: $grey;
+            }
         }
-    }
-    section.devweb{
-        height: 300px;
-        background-color: $gold;
     }
 }
