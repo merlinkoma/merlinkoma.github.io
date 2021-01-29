@@ -1,4 +1,5 @@
 @import "variables";
+@import "registraricons";
 
 body {
     margin    : 0;
@@ -64,6 +65,7 @@ body {
     }
 
     main {
+        font-family     : Montserrat Alternates;
         section.aboutme {
             background-color: $blue;
             color           : $light;
@@ -90,16 +92,26 @@ body {
         section#main {
             width     : 200vw;
             transition: 500ms ease-in-out;
-            height    : 600px;
+            height    : 1500px;
             display   : flex;
 
             section.devweb {
                 width           : 80vw;
                 background-color: $blue-light;
+                div.languagesicons{
+                    display: flex;
+                    flex-direction: column;
+                    div{ 
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            width: 3vw;
+                        }
+                    }
+                }
             }
 
             section.slide {
-                font-family     : Montserrat Alternates;
                 font-weight     : bold;
                 width           : 40vw;
                 color           : $light;
@@ -132,6 +144,93 @@ body {
             section.registrar {
                 width           : 80vw;
                 background-color: $grey;
+                color: $light;
+
+                div.formation{
+                    width: 100%;
+                    h3{
+                        font-size: 2em;
+                        padding-left: 5%;
+                    }
+                    div.studies{
+                        width: 80%;
+                        margin: 0 auto 0 5%;
+                        text-align: justify;
+                        a{
+                            text-decoration: none;
+                            color: $blue;
+                            &:hover{
+                                font-size: 1.1em;
+                            }
+                        }
+                    }
+                    div.degrees{
+                        width: 95%;
+                        margin: 0 auto 0 7%;
+                        h4{
+                            font-size: 1.2em;
+                        }
+                        ul{
+                            padding: 3%;
+                            margin-bottom: 6%;
+                            box-shadow: 0 0 20px #858881;
+                            li{
+                                padding: 1% 0 1% 0;
+                            }
+                        }
+                    }
+                }
+
+                div.stages{
+                    width: 100%;
+                    h3{
+                        font-size: 2em;
+                        padding-left: 5%;
+                    }
+                    div.trainee{
+                        width: 80%;
+                        margin: 0 auto 0 5%;
+                        text-align: justify;
+                        ul{
+                            margin-left: 8%;
+                            margin-bottom: 6%;
+                            padding: 3%;
+                            box-shadow: 0 0 20px #858881;
+                            li{
+                                padding: 1% 0 1% 0;
+                            }
+                        }
+                    }
+                }
+
+                div.exppro{
+                    width: 100%;
+                    h3{
+                        font-size: 2em;
+                        padding-left: 5%;
+                    }
+                    div.job{
+                        width: 80%;
+                        margin: 0 auto 0 5%;
+                        text-align: justify;
+                        a{
+                            text-decoration: none;
+                            color: $blue;
+                            &:hover{
+                                font-size: 1.1em;
+                            }
+                        }
+                        ul{
+                            margin-left: 8%;
+                            padding: 3%;
+                            box-shadow: 0 0 20px #858881;
+                            li{
+                                padding: 1% 0 1% 0;
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }

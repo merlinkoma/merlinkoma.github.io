@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap");
+h3 img.registraricons {
+  width: 2vw;
+  padding: 0 1% 0 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -55,6 +60,9 @@ body header div.name div.line {
   width: 30%;
   margin: 15px auto;
 }
+body main {
+  font-family: Montserrat Alternates;
+}
 body main section.aboutme {
   background-color: #263741;
   color: #F1F1ED;
@@ -78,15 +86,25 @@ body main section.aboutme p.aboutme {
 body main section#main {
   width: 200vw;
   transition: 500ms ease-in-out;
-  height: 600px;
+  height: 1500px;
   display: flex;
 }
 body main section#main section.devweb {
   width: 80vw;
   background-color: #8CA2AA;
 }
+body main section#main section.devweb div.languagesicons {
+  display: flex;
+  flex-direction: column;
+}
+body main section#main section.devweb div.languagesicons div {
+  display: flex;
+  flex-direction: row;
+}
+body main section#main section.devweb div.languagesicons div img {
+  width: 3vw;
+}
 body main section#main section.slide {
-  font-family: Montserrat Alternates;
   font-weight: bold;
   width: 40vw;
   color: #F1F1ED;
@@ -114,6 +132,89 @@ body main section#main section.slide div.chevron img:hover {
 body main section#main section.registrar {
   width: 80vw;
   background-color: #93968F;
+  color: #F1F1ED;
+}
+body main section#main section.registrar div.formation {
+  width: 100%;
+}
+body main section#main section.registrar div.formation h3 {
+  font-size: 2em;
+  padding-left: 5%;
+}
+body main section#main section.registrar div.formation div.studies {
+  width: 80%;
+  margin: 0 auto 0 5%;
+  text-align: justify;
+}
+body main section#main section.registrar div.formation div.studies a {
+  text-decoration: none;
+  color: #263741;
+}
+body main section#main section.registrar div.formation div.studies a:hover {
+  font-size: 1.1em;
+}
+body main section#main section.registrar div.formation div.degrees {
+  width: 95%;
+  margin: 0 auto 0 7%;
+}
+body main section#main section.registrar div.formation div.degrees h4 {
+  font-size: 1.2em;
+}
+body main section#main section.registrar div.formation div.degrees ul {
+  padding: 3%;
+  margin-bottom: 6%;
+  box-shadow: 0 0 20px #858881;
+}
+body main section#main section.registrar div.formation div.degrees ul li {
+  padding: 1% 0 1% 0;
+}
+body main section#main section.registrar div.stages {
+  width: 100%;
+}
+body main section#main section.registrar div.stages h3 {
+  font-size: 2em;
+  padding-left: 5%;
+}
+body main section#main section.registrar div.stages div.trainee {
+  width: 80%;
+  margin: 0 auto 0 5%;
+  text-align: justify;
+}
+body main section#main section.registrar div.stages div.trainee ul {
+  margin-left: 8%;
+  margin-bottom: 6%;
+  padding: 3%;
+  box-shadow: 0 0 20px #858881;
+}
+body main section#main section.registrar div.stages div.trainee ul li {
+  padding: 1% 0 1% 0;
+}
+body main section#main section.registrar div.exppro {
+  width: 100%;
+}
+body main section#main section.registrar div.exppro h3 {
+  font-size: 2em;
+  padding-left: 5%;
+}
+body main section#main section.registrar div.exppro div.job {
+  width: 80%;
+  margin: 0 auto 0 5%;
+  text-align: justify;
+}
+body main section#main section.registrar div.exppro div.job a {
+  text-decoration: none;
+  color: #263741;
+}
+body main section#main section.registrar div.exppro div.job a:hover {
+  font-size: 1.1em;
+}
+body main section#main section.registrar div.exppro div.job ul {
+  margin-left: 8%;
+  padding: 3%;
+  box-shadow: 0 0 20px #858881;
+}
+body main section#main section.registrar div.exppro div.job ul li {
+  padding: 1% 0 1% 0;
 }
 
 /*# sourceMappingURL=index.css.map */
