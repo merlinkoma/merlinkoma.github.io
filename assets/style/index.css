@@ -1,8 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap");
-h3 img.registraricons {
+h3 img#registraricons {
   width: 2vw;
   padding: 0 1% 0 0;
+}
+
+h2 img#registraricons:nth-child(odd) {
+  width: 2vw;
+  padding: 1% 1% 0 1%;
+}
+h2 :nth-child(even) {
+  width: 8vw;
+  padding: 1% 1% 0 1%;
+}
+
+#divicons1 img {
+  width: 5vw;
+  height: auto;
+  padding: 3% 3% 1% 1%;
+}
+
+#divicons2 img {
+  width: 6vw;
+  height: auto;
+  padding: 3% 5% 3% 5%;
+  align-items: center;
+}
+
+div#split {
+  border-top: solid 3px #F1F1ED;
+  width: 30%;
+  margin: 15px auto;
 }
 
 body {
@@ -93,16 +121,81 @@ body main section#main section.devweb {
   width: 80vw;
   background-color: #8CA2AA;
 }
+body main section#main section.devweb h3 {
+  color: #F1F1ED;
+  font-size: 2em;
+  padding-left: 10%;
+  margin: 2% 0;
+}
+body main section#main section.devweb p {
+  color: #F1F1ED;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1% 0 1% 0;
+  text-align: justify;
+}
+body main section#main section.devweb p span.dateforma {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #263741;
+}
+body main section#main section.devweb p span.titreforma {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+body main section#main section.devweb p a {
+  text-decoration: none;
+  color: #263741;
+}
+body main section#main section.devweb p a:hover {
+  font-size: 1.1em;
+}
 body main section#main section.devweb div.languagesicons {
   display: flex;
   flex-direction: column;
 }
-body main section#main section.devweb div.languagesicons div {
+body main section#main section.devweb div.languagesicons div.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  margin: 2% 8% 2% 8%;
+  box-shadow: 0 0 20px #7d939b;
+}
+body main section#main section.devweb div.languagesicons div.languages p.languageslist {
+  margin: 0;
+}
+body main section#main section.devweb div.languagesicons div.languages div#divicons1 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
-body main section#main section.devweb div.languagesicons div img {
-  width: 3vw;
+body main section#main section.devweb div.languagesicons div.library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  margin: 2% 8% 2% 8%;
+  box-shadow: 0 0 20px #7d939b;
+}
+body main section#main section.devweb div.languagesicons div.library p.bdd {
+  margin: 0;
+}
+body main section#main section.devweb div.languagesicons div.library div#divicons2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body main section#main section.devweb div.github {
+  display: flex;
+  padding-left: 2vw;
+}
+body main section#main section.devweb div.github h2 {
+  color: #F1F1ED;
+  font-size: 1.5em;
+  padding-left: 10%;
+  margin: 2% 0;
+  font-weight: 600;
 }
 body main section#main section.slide {
   font-weight: bold;
@@ -114,6 +207,9 @@ body main section#main section.slide {
   align-items: center;
 }
 body main section#main section.slide div.chevron {
+  position: sticky;
+  bottom: 10%;
+  top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +248,15 @@ body main section#main section.registrar div.formation div.studies a {
 }
 body main section#main section.registrar div.formation div.studies a:hover {
   font-size: 1.1em;
+}
+body main section#main section.registrar div.formation div.studies ul {
+  margin-left: 8%;
+  padding: 3%;
+  margin-bottom: 6%;
+  box-shadow: 0 0 20px #858881;
+}
+body main section#main section.registrar div.formation div.studies ul li {
+  padding: 1% 0 1% 0;
 }
 body main section#main section.registrar div.formation div.degrees {
   width: 95%;

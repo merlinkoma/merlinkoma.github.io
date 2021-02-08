@@ -1,5 +1,5 @@
 @import "variables";
-@import "registraricons";
+@import "icons";
 
 body {
     margin    : 0;
@@ -65,7 +65,8 @@ body {
     }
 
     main {
-        font-family     : Montserrat Alternates;
+        font-family: Montserrat Alternates;
+
         section.aboutme {
             background-color: $blue;
             color           : $light;
@@ -98,15 +99,89 @@ body {
             section.devweb {
                 width           : 80vw;
                 background-color: $blue-light;
-                div.languagesicons{
-                    display: flex;
-                    flex-direction: column;
-                    div{ 
-                        display: flex;
-                        flex-direction: row;
-                        img{
-                            width: 3vw;
+
+                h3 {
+                    color       : $light;
+                    font-size   : 2em;
+                    padding-left: 10%;
+                    margin: 2% 0;
+                }
+
+                p {
+                    color     : $light;
+                    width     : 80%;
+                    margin    : 0 auto;
+                    padding   : 1% 0 1% 0;
+                    text-align: justify;
+
+                    span.dateforma {
+                        font-weight: bold;
+                        font-size  : 1.1em;
+                        color      : $blue;
+                    }
+
+                    span.titreforma {
+                        font-weight: bold;
+                        font-size  : 1.3em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color          : $blue;
+
+                        &:hover {
+                            font-size: 1.1em;
                         }
+                    }
+                }
+
+                div.languagesicons {
+                    display       : flex;
+                    flex-direction: column;
+
+                    div.languages {
+                        display       : flex;
+                        flex-direction: column;
+                        align-items   : center;
+                        padding       : 3%;
+                        margin        : 2% 8% 2% 8%;
+                        box-shadow    : 0 0 20px $shadow2;
+                        p.languageslist{
+                            margin: 0;
+                        }
+                        div#divicons1{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                        }
+                    }
+                    div.library{
+                        display       : flex;
+                        flex-direction: column;
+                        align-items   : center;
+                        padding       : 3%;
+                        margin        : 2% 8% 2% 8%;
+                        box-shadow    : 0 0 20px $shadow2;
+                        p.bdd{
+                            margin: 0;
+                        }
+                        div#divicons2{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                div.github{
+                    display: flex;
+                    padding-left: 2vw;
+                    h2 {
+                        color       : $light;
+                        font-size   : 1.5em;
+                        padding-left: 10%;
+                        margin: 2% 0;
+                        font-weight: 600;
                     }
                 }
             }
@@ -121,6 +196,9 @@ body {
                 align-items     : center;
 
                 div.chevron {
+                    position      : sticky;
+                    bottom        : 10%;
+                    top           : 10%;
                     display       : flex;
                     flex-direction: column;
                     align-items   : center;
@@ -144,87 +222,116 @@ body {
             section.registrar {
                 width           : 80vw;
                 background-color: $grey;
-                color: $light;
+                color           : $light;
 
-                div.formation{
+                div.formation {
                     width: 100%;
-                    h3{
-                        font-size: 2em;
+
+                    h3 {
+                        font-size   : 2em;
                         padding-left: 5%;
                     }
-                    div.studies{
-                        width: 80%;
-                        margin: 0 auto 0 5%;
+
+                    div.studies {
+                        width     : 80%;
+                        margin    : 0 auto 0 5%;
                         text-align: justify;
-                        a{
+
+                        a {
                             text-decoration: none;
-                            color: $blue;
-                            &:hover{
+                            color          : $blue;
+
+                            &:hover {
                                 font-size: 1.1em;
                             }
                         }
+
+                        ul {
+                            margin-left  : 8%;
+                            padding      : 3%;
+                            margin-bottom: 6%;
+                            box-shadow   : 0 0 20px $shadow1;
+
+                            li {
+                                padding: 1% 0 1% 0;
+                            }
+                        }
                     }
-                    div.degrees{
-                        width: 95%;
+
+                    div.degrees {
+                        width : 95%;
                         margin: 0 auto 0 7%;
-                        h4{
+
+                        h4 {
                             font-size: 1.2em;
                         }
-                        ul{
-                            padding: 3%;
+
+                        ul {
+                            padding      : 3%;
                             margin-bottom: 6%;
-                            box-shadow: 0 0 20px #858881;
-                            li{
+                            box-shadow   : 0 0 20px $shadow1;
+
+                            li {
                                 padding: 1% 0 1% 0;
                             }
                         }
                     }
                 }
 
-                div.stages{
+                div.stages {
                     width: 100%;
-                    h3{
-                        font-size: 2em;
+
+                    h3 {
+                        font-size   : 2em;
                         padding-left: 5%;
                     }
-                    div.trainee{
-                        width: 80%;
-                        margin: 0 auto 0 5%;
+
+                    div.trainee {
+                        width     : 80%;
+                        margin    : 0 auto 0 5%;
                         text-align: justify;
-                        ul{
-                            margin-left: 8%;
+
+                        ul {
+                            margin-left  : 8%;
                             margin-bottom: 6%;
-                            padding: 3%;
-                            box-shadow: 0 0 20px #858881;
-                            li{
+                            padding      : 3%;
+                            box-shadow   : 0 0 20px $shadow1;
+
+                            li {
                                 padding: 1% 0 1% 0;
                             }
                         }
                     }
                 }
 
-                div.exppro{
+                div.exppro {
                     width: 100%;
-                    h3{
-                        font-size: 2em;
+
+                    h3 {
+                        font-size   : 2em;
                         padding-left: 5%;
                     }
-                    div.job{
-                        width: 80%;
-                        margin: 0 auto 0 5%;
+
+                    div.job {
+                        width     : 80%;
+                        margin    : 0 auto 0 5%;
                         text-align: justify;
-                        a{
+
+                        a {
                             text-decoration: none;
-                            color: $blue;
-                            &:hover{
+                            color          : $blue;
+
+                            &:hover {
                                 font-size: 1.1em;
                             }
                         }
-                        ul{
+
+                        ul {
                             margin-left: 8%;
-                            padding: 3%;
-                            box-shadow: 0 0 20px #858881;
-                            li{
+                            padding    : 3%;
+                            box-shadow : 0 0 20px #858881;
+
+                            li {
                                 padding: 1% 0 1% 0;
                             }
                         }
