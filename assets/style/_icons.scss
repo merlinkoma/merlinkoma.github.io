@@ -6,34 +6,60 @@ h3 {
 }
 
 h2 {
-    img#registraricons:nth-child(odd){
+    img#registraricons {
         width  : 2vw;
         padding: 1% 1% 0 1%;
     }
-    & :nth-child(even){
-        width  : 8vw;
-        padding: 1% 1% 0 1%;
+
+    a {
+        text-decoration: none;
+        color          : inherit;
+
+        img#registrariconslink1 {
+            width  : 8vw;
+            padding: 1% 3% 0 6%;
+        }
+
+        img#registrariconslink2 {
+            width  : 2vw;
+            padding: 1% 1% 0 0;
+        }
     }
 }
 
 #divicons1 {
     img {
-        width : 5vw;
-        height: auto;
+        width  : 5vw;
+        height : auto;
         padding: 3% 3% 1% 1%;
     }
 }
+
 #divicons2 {
     img {
-        width : 6vw;
-        height: auto;
-        padding: 3% 5% 3% 5%;
-        align-items:center;
+        width      : 6vw;
+        height     : auto;
+        padding    : 3% 5% 3% 5%;
+        align-items: center;
     }
 }
 
-div#split{
+div#split {
     border-top: solid 3px $light;
-                width     : 30%;
-                margin    : 15px auto;
+    width     : 30%;
+    margin    : 25px auto 45px;
+}
+
+div.jobtitle {
+    img {
+        width       : 3vw;
+        padding-left: 2%;
+    }
+}
+
+#interestsicons{
+    width      : 3vw;
+        height     : auto;
+        padding    : 0 1%;
+
 }
