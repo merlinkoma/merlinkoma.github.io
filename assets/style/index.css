@@ -52,6 +52,25 @@ div.jobtitle img {
   padding: 0 1%;
 }
 
+div#slide {
+  font-size: 9em;
+}
+
+div.jobpictures {
+  width: 61vw;
+  display: flex;
+  flex-direction: row;
+  margin: 4% 0 0 8vw;
+  overflow-x: hidden;
+  box-shadow: 0 0 20px #242e31;
+}
+div.jobpictures img.registrar-carousel {
+  height: 20vw;
+  width: auto;
+  padding: 1%;
+  background-color: #F1F1ED;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -76,8 +95,8 @@ body header div.image img {
   width: 200px;
   height: auto;
   z-index: 1;
-  box-shadow: 0 0 20px #8CA2AA;
-  border-radius: 10px;
+  box-shadow: 0 0 20px #01171f;
+  border-radius: 50px 15px;
 }
 body header div.name {
   width: 70%;
@@ -235,6 +254,7 @@ body main section#main section.slide div.chevron {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3% 0 3% 0;
 }
 body main section#main section.slide div.chevron label {
   font-size: 1.2rem;
@@ -397,11 +417,28 @@ body section.interests div.fun {
   text-align: justify;
   box-shadow: 0 0 20px #222e35;
 }
+body section.interests div.fun span {
+  font-weight: 600;
+  color: #8CA2AA;
+}
 body section.interests div.fun a {
   text-decoration: none;
   color: #8CA2AA;
 }
 body section.interests div.fun a:hover {
+  font-size: 1.1em;
+}
+body footer {
+  background-color: #8CA2AA;
+  color: #F1F1ED;
+  font-size: 0.8em;
+  text-align: center;
+}
+body footer a {
+  text-decoration: none;
+  color: #263741;
+}
+body footer a:hover {
   font-size: 1.1em;
 }
 

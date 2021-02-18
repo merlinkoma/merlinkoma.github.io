@@ -1,0 +1,14 @@
+div.jobpictures{
+    width     : 61vw;
+    display: flex;
+    flex-direction: row;
+    margin: 4% 0 0 8vw;
+    overflow-x: hidden;
+    box-shadow: 0 0 20px #242e31;
+    img.registrar-carousel{
+        height: 20vw;
+        width: auto;
+        padding: 1%;
+        background-color: $light;
+    }
+}

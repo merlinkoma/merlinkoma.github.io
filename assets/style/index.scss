@@ -1,5 +1,6 @@
 @import "variables";
 @import "icons";
+@import "pictures";
 
 body {
     margin    : 0;
@@ -26,8 +27,8 @@ body {
                 height       : auto;
                 // transform: translate(-350px, -68px);
                 z-index      : 1;
-                box-shadow   : 0 0 20px #8CA2AA;
-                border-radius: 10px;
+                box-shadow   : 0 0 20px #01171f;
+                border-radius: 50px 15px;
             }
         }
 
@@ -211,6 +212,7 @@ body {
                     display       : flex;
                     flex-direction: column;
                     align-items   : center;
+                    padding: 3% 0 3% 0;
 
                     label {
                         font-size: 1.2rem;
@@ -408,12 +410,29 @@ body {
             padding : 1%;
             text-align: justify;
             box-shadow    : 0 0 20px #222e35;
+            span{
+                font-weight: 600;
+                color: $blue-light;
+            }
             a{
                 text-decoration: none;
                 color: $blue-light;
                 &:hover {
                     font-size: 1.1em;
                 }
+            }
+        }
+    }
+    footer{
+        background-color: $blue-light;
+        color: $light;
+        font-size: 0.8em;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $blue;
+            &:hover{
+                font-size: 1.1em;
             }
         }
     }
