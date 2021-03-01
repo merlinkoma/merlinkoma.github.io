@@ -57,18 +57,31 @@ div#slide {
 }
 
 div.jobpictures {
-  width: 61vw;
+  width: 70vw;
+  box-shadow: 0 0 20px #242e31;
   display: flex;
   flex-direction: row;
-  margin: 4% 0 0 8vw;
-  overflow-x: hidden;
-  box-shadow: 0 0 20px #242e31;
+  margin: 5% auto;
 }
-div.jobpictures img.registrar-carousel {
+div.jobpictures div.slide {
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  font-size: 10em;
+}
+div.jobpictures div.img-registrar-carousel {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  border: 6px solid #F1F1ED;
+  overflow-x: hidden;
+}
+div.jobpictures div.img-registrar-carousel img.registrar-carousel {
   height: 20vw;
   width: auto;
-  padding: 1%;
-  background-color: #F1F1ED;
+  box-shadow: 0 0 20px #242e31;
+  margin: 1%;
+  border: 1px solid #263741;
 }
 
 body {
@@ -76,8 +89,43 @@ body {
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 body header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body header nav {
+  background-color: #263741;
+  width: 100%;
+  font-family: Montserrat Alternates;
+}
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
+body header nav ul li {
+  color: #F1F1ED;
+  margin: 1%;
+  list-style: none;
+  width: 10vw;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+body header nav ul li a:hover {
+  color: #907D50;
+  border-bottom: 1px solid #907D50;
+  transition: all 0.5s ease-in-out;
+}
+body header div.banner {
   margin: 0;
   padding: 0;
   font-family: Caveat;
@@ -86,26 +134,26 @@ body header {
   background-color: #263741;
   display: flex;
 }
-body header div.image {
+body header div.banner div.image {
   width: 30%;
   display: flex;
   align-items: center;
 }
-body header div.image img {
+body header div.banner div.image img {
   width: 200px;
   height: auto;
   z-index: 1;
   box-shadow: 0 0 20px #01171f;
   border-radius: 50px 15px;
 }
-body header div.name {
+body header div.banner div.name {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 2;
 }
-body header div.name div.nametitle {
+body header div.banner div.name div.nametitle {
   color: #907D50;
   font-size: 75px;
   font-weight: 700;
@@ -113,7 +161,7 @@ body header div.name div.nametitle {
   margin: 0 auto;
   text-align: center;
 }
-body header div.name div.subtitle {
+body header div.banner div.name div.subtitle {
   color: #F1F1ED;
   font-size: 30px;
   font-weight: 500;
@@ -121,7 +169,7 @@ body header div.name div.subtitle {
   margin: 0 auto;
   text-align: center;
 }
-body header div.name div.line {
+body header div.banner div.name div.line {
   border-top: solid 3px #907D50;
   width: 30%;
   margin: 15px auto;
@@ -149,7 +197,7 @@ body main section.aboutme h3 {
 body main section.aboutme p.aboutme {
   height: auto;
   margin: 0 auto;
-  padding: 0px 40vw 30px 10vw;
+  padding: 0;
   width: 70vw;
   text-align: justify;
 }
@@ -433,13 +481,14 @@ body footer {
   color: #F1F1ED;
   font-size: 0.8em;
   text-align: center;
+  padding: 2% 0;
 }
 body footer a {
   text-decoration: none;
   color: #263741;
 }
 body footer a:hover {
-  font-size: 1.1em;
+  color: #907D50;
 }
 
 /*# sourceMappingURL=index.css.map */

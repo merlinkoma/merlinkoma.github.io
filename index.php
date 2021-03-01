@@ -1,29 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mélissa Ameye</title>
-    <link rel="stylesheet" href="./assets/style/index.css">
-</head>
+<?php
+$title = 'Accueil';
+$style = 'index';
+include './doctype.php';
+?>
 
 <body>
 
     <header>
-        <div class="name">
-            <div class="nametitle">
-                Mélissa Ameye
+
+        <nav>
+            <ul>
+                <li><a href="./index.php">Accueil</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="./contact.php">Me contacter</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <div class="name">
+                <div class="nametitle">
+                    Mélissa Ameye
+                </div>
+                <div class="subtitle">
+                    développeur web & régisseur des oeuvres
+                </div>
+                <div class="line">
+                </div>
             </div>
-            <div class="subtitle">
-                développeur web & régisseur des oeuvres
-            </div>
-            <div class="line">
+            <div class="image">
+                <img src="./assets/img/profilpicture.jpg" alt="profil picture">
             </div>
         </div>
-        <div class="image">
-            <img src="./assets/img/profilpicture.jpg" alt="profil picture">
-        </div>
+
     </header>
 
     <main>
@@ -47,8 +55,7 @@
                         professionnel "Développeur web & web mobile"</span>
                 </p>
                 <p>
-                    Formation conduisant à un équivalent Bac+2, dispensée par <a
-                        href="https://diplome.m2iformation.fr/diplomes/devenez-developpeur-web-et-web-mobile/">M2i
+                    Formation conduisant à un équivalent Bac+2, dispensée par <a href="https://diplome.m2iformation.fr/diplomes/devenez-developpeur-web-et-web-mobile/">M2i
                         Lille</a> et qui permet d'acquérir en 10 mois (700h de théorique) de solides bases dans le
                     développement web. La formation
                     prévoit 3 mois de stage (270h de pratique) en entreprise.
@@ -89,8 +96,7 @@
                         <img id="registraricons" src="./assets/img/005-tools.svg" alt="tools-icon">Projets communs &
                         personnels >
                         <a href="https://github.com/merlinkoma">
-                            <img id="registrariconslink1" src="./assets/img/bitbucket_official_logo_icon_170477.svg"
-                                alt="bitbucket-icon">
+                            <img id="registrariconslink1" src="./assets/img/bitbucket_official_logo_icon_170477.svg" alt="bitbucket-icon">
                         </a>
                         <a href="https://bitbucket.org/Merlinkoma/">
                             <img id="registrariconslink2" src="./assets/img/github.svg" alt="github-icon">
@@ -110,8 +116,7 @@
                     </p>
                     <div class="food">
                         <ul>
-                            <div class="jobtitle">Chef de rang <img src="./assets/img/001-tray.svg"
-                                    alt="restorant icon"></div>
+                            <div class="jobtitle">Chef de rang <img src="./assets/img/001-tray.svg" alt="restorant icon"></div>
                             <li><span>Pizza Paï</span>, Lille-Passage 57 - 2010 puis ponctuellement jusque fin 2013 (2
                                 ans)</li>
                             <li><span>Il Ristorante</span>, Bruay-la-Buissière, Marquette-lez-Lille (ouverture du
@@ -121,8 +126,7 @@
                     </div>
                     <div class="order">
                         <ul>
-                            <div class="jobtitle">Préparatrice de commandes <img src="./assets/img/003-factory.svg"
-                                    alt="factory icon"></div>
+                            <div class="jobtitle">Préparatrice de commandes <img src="./assets/img/003-factory.svg" alt="factory icon"></div>
                             <li><span>Cléopâtre</span>, Ballan-Miré - 2018/2019 (4 mois)</li>
                             <li><span>VertBaudet SADAS</span>, Marquette-lez-Lille - 2017 (3 mois)</li>
                             <li><span>Dutexdor</span>, Houplines - 4 saisons de 2007 à 2010</li>
@@ -130,8 +134,7 @@
                     </div>
                     <div class="clean">
                         <ul>
-                            <div class="jobtitle">Assistante administrative & ménagère <img
-                                    src="./assets/img/002-cleaning.svg" alt="cleaning icon"></div>
+                            <div class="jobtitle">Assistante administrative & ménagère <img src="./assets/img/002-cleaning.svg" alt="cleaning icon"></div>
                             <li><span>ADMR</span>, Saint-Branchs - 2019 (2 mois)</li>
                             <li><span>AXEO Services</span>, 2019 (1 mois)</li>
                         </ul>
@@ -204,8 +207,7 @@
                     </h3>
                     <div class="job">
                         N'étant pas rattachée à un musée spécifique, j'ai mis mes compétences au service de différents
-                        musées de manière ponctuelle, soit par le biais de la société <a
-                            href="http://www.chenue.com/notre-savoir-faire/">André Chenue</a>, soit directement auprès
+                        musées de manière ponctuelle, soit par le biais de la société <a href="http://www.chenue.com/notre-savoir-faire/">André Chenue</a>, soit directement auprès
                         des collectivités. Je suis intervenue dans le cadre de chantiers des collections afin de
                         réaliser des inventaires, des récolement, des campagnes photographiques ou encore des
                         réaménagements de réserves.
@@ -224,11 +226,14 @@
 
                 <!-- Gallerie d'images -->
                 <div class="jobpictures">
-                    <div id="slide"><</div>
-                    <img src="./assets/img/registrar/registrar (18).jpg" class="registrar-carousel" alt="">
-                    <img src="./assets/img/registrar/registrar (19).jpg" class="registrar-carousel" alt="">
-                    <img src="./assets/img/registrar/registrar (10).jpg" class="registrar-carousel" alt="">
-                    <div id="slide">></div>
+                    <div id="slideleft" class="slide">
+                        *</div>
+                    <div class="img-registrar-carousel">
+                        <img src="./assets/img/registrar/registrar (18).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
+                        <img src="./assets/img/registrar/registrar (19).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
+                        <img src="./assets/img/registrar/registrar (10).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
+                    </div>
+                    <div id="slideright" class="slide">*</div>
                 </div>
             </section>
 
@@ -273,19 +278,12 @@
     </main>
     <footer>
 
-        <div class="icons-credits">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>, <a
-                href="https://www.freepik.com" title="Freepik">Freepik</a>, <a
-                href="https://www.flaticon.com/authors/srip" title="srip">srip</a>, <a
-                href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, <a
-                href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
-                perfect</a>, <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, <a
-                href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a>, <a
-                href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a
-                href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a>
+        <div class="icons-credits">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>, <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                perfect</a>, <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a>
             from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div>
-                © 2021 MerlinK
-            </div>
+        <div>
+            © 2021 MerlinK
+        </div>
     </footer>
     <script type="text/javascript" src="./assets/index.js"></script>
 
