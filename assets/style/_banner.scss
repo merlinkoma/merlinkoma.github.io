@@ -1,0 +1,56 @@
+div.banner {
+    margin          : 0;
+    padding         : 0;
+    font-family     : Caveat;
+    width           : 100vw;
+    height          : 40vh;
+    background-color: $blue;
+    display         : flex;
+
+    div.image {
+        width      : 30%;
+        display    : flex;
+        align-items: center;
+
+        img {
+            width        : 200px;
+            height       : auto;
+            // transform: translate(-350px, -68px);
+            z-index      : 1;
+            box-shadow   : 0 0 20px #01171f;
+            border-radius: 50px 15px;
+        }
+    }
+
+    div.name {
+        width          : 70%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        z-index        : 2;
+
+        div.nametitle {
+            color      : $gold;
+            font-size  : 75px;
+            font-weight: 700;
+            width      : 80%;
+            margin     : 0 auto;
+            text-align : center;
+        }
+
+        div.subtitle {
+            color      : $light;
+            font-size  : 30px;
+            font-weight: 500;
+            width      : 80%;
+            margin     : 0 auto;
+            text-align : center;
+        }
+
+        div.line {
+            border-top: solid 3px $gold;
+            width     : 30%;
+            margin    : 15px auto;
+        }
+    }
+}

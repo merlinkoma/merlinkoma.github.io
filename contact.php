@@ -1,10 +1,8 @@
 <?php
-$title = 'Contact';
-$style = 'contact';
+$title = 'Contact - MerlinK';
 include './doctype.php';
 ?>
 
-<body>
     <h2>Me contacter</h2>
     <form action="" method="post">
         <label for="name">Nom</label>

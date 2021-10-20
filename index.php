@@ -1,291 +1,283 @@
 <?php
-$title = 'Accueil';
-$style = 'index';
+$title = 'Portfolio - MerlinK';
 include './doctype.php';
 ?>
 
-<body>
 
-    <header>
-
-        <nav>
-            <ul>
-                <li><a href="./index.php">Accueil</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="./contact.php">Me contacter</a></li>
-            </ul>
-        </nav>
-
-        <div class="banner">
-            <div class="name">
-                <div class="nametitle">
-                    Mélissa Ameye
-                </div>
-                <div class="subtitle">
-                    développeur web & régisseur des oeuvres
-                </div>
-                <div class="line">
-                </div>
-            </div>
-            <div class="image">
-                <img src="./assets/img/profilpicture.jpg" alt="profil picture">
-            </div>
+<div class="banner">
+    <div class="name">
+        <div class="nametitle">
+            Mélissa Ameye
         </div>
+        <div class="subtitle">
+            développeuse web & régisseure des oeuvres
+        </div>
+        <div class="line">
+        </div>
+    </div>
+    <div class="image" style="display: none;">
+        <img src="./assets/img/profilpicture.jpg" alt="profil picture">
+    </div>
+</div>
 
-    </header>
+</header>
 
-    <main>
+<main>
 
-        <section class="aboutme">
-            <h3 class="aboutme">A propos de moi</h3>
-            <p class="aboutme">
-                Après l'obtention de mon diplôme "Patrimoine & Musées", j'ai travaillé plusieurs années comme régisseur
-                des oeuvres sur des chantiers de collection de différents musées français. A 30 ans, j'ai amorcé une
-                reconversion vers le développement web, un autre milieu qui m'attirait depuis longtemps et qui pouvait
-                m'offrir la stabilité professionnelle que je cherchais.
+    <section class="aboutme">
+        <h3 class="aboutme">A propos de moi</h3>
+        <p class="aboutme">
+            Après l'obtention de mon diplôme "Patrimoine & Musées", j'ai travaillé plusieurs années comme régisseure
+            des oeuvres sur des chantiers de collection de différents musées français. A 30 ans, j'ai amorcé une
+            reconversion vers le développement web, un autre milieu qui m'attirait depuis longtemps et qui pouvait
+            m'offrir la stabilité professionnelle que je cherchais. <br />
+            J'ai obtenu en août 2021 le Titre professionnel Développeur web/ web mobile.
+        </p>
+    </section>
+
+    <section id="main">
+
+        <section class="devweb" id="devweb">
+
+            <h3><img id="registraricons" src="./assets/img/001-graduation-cap.svg" alt="">Formation</h3>
+            <p><span class="dateforma">De novembre 2020 à août 2021 :</span><span class="titreforma"> Titre
+                    professionnel "Développeur web & web mobile"</span>
             </p>
+            <p>
+                Formation conduisant à un équivalent Bac+2, dispensée par <a href="https://diplome.m2iformation.fr/diplomes/devenez-developpeur-web-et-web-mobile/" target="_blank">M2i
+                    Lille</a> et qui permet d'acquérir en 10 mois (700h de théorique) de solides bases dans le
+                développement web. La formation
+                prévoit 3 mois de stage (270h de pratique) en entreprise, que j'ai réalisé chez <a href="https://systeco.fr/" target="_blank"> Systeco</a>, une société spécialisée dans l'intégration sur-mesure de systèmes de sécurité.
+            </p>
+
+            <h3><img id="registraricons" src="./assets/img/005-tools.svg" alt="tools-icon">Langages & outils</h3>
+            <div class="languagesicons">
+
+                <div class="languages">
+                    <p class="languageslist">
+                        HTML, CSS (& SASS) & JavaSCript (& ReactJS / React Native), PHP, Laravel.
+                    </p>
+                    <div id="divicons1">
+                        <img src="./assets/img/html_original_wordmark_logo_icon_146478.svg" alt="html-icon">
+                        <img src="./assets/img/css_original_wordmark_logo_icon_146576.svg" alt="css-icon">
+                        <img src="./assets/img/file_type_sass_icon_130182.svg" alt="sass-icon">
+                        <img src="./assets/img/file_type_js_official_icon_130509.svg" alt="js-icon">
+                        <img src="./assets/img/react_original_wordmark_logo_icon_146375.svg" alt="react-icon">
+                        <img src="./assets/img/new-php-logo.svg" alt="php-icon">
+                        <img src="./assets/img/laravel-logo.svg" alt="laravel-icon">
+                    </div>
+                </div>
+
+                <div class="library">
+                    <p class="bdd">
+                        La formation aborde les bases de données via MySQL & MongoDB. En plus du développement web,
+                        c'est un domaine qui m'intéresse particulièrement.
+
+                    </p>
+                    <div id="divicons2">
+                        <img src="./assets/img/mysql_original_wordmark_logo_icon_146417.svg" alt="mysql-icon">
+                        <img src="./assets/img/mongodb.svg" alt="mongo-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="github">
+                <h2>
+                    <img id="registraricons" src="./assets/img/005-tools.svg" alt="tools-icon">Projets communs &
+                    personnels >
+                </h2>
+
+                <a href="https://bitbucket.org/Merlinkoma/">
+                    <img id="registrariconslink2" src="./assets/img/github.svg" alt="github-icon">
+                </a>
+            </div>
+
+            <div id="split">
+            </div>
+
+            <div class="otherjobs">
+                <h3>Autres expériences professionnelles</h3>
+                <p>
+                    Jobs étudiants ou emplois alimentaires ponctuels, j'ai de l'expérience dans d'autres domaines
+                    qui m'ont appris l'organisation et les relations clients, compétences qui me resteront utiles
+                    dans mon futur professionnel.
+                </p>
+                <div class="food">
+                    <ul>
+                        <div class="jobtitle">Chef de rang <img src="./assets/img/001-tray.svg" alt="restorant icon"></div>
+                        <li><span>Pizza Paï</span>, Lille-Passage 57 - 2010 puis ponctuellement jusque fin 2013 (2
+                            ans)</li>
+                        <li><span>Il Ristorante</span>, Bruay-la-Buissière, Marquette-lez-Lille (ouverture du
+                            restaurant) et Lille-Tanneurs - 2013 puis 2016 (1 ans 1/2)</li>
+                        <li><span>Basilic Café</span>, Lille-Esquermoise - 2014 (4 mois)</li>
+                    </ul>
+                </div>
+                <div class="order">
+                    <ul>
+                        <div class="jobtitle">Préparatrice de commandes <img src="./assets/img/003-factory.svg" alt="factory icon"></div>
+                        <li><span>Cléopâtre</span>, Ballan-Miré - 2018/2019 (4 mois)</li>
+                        <li><span>VertBaudet SADAS</span>, Marquette-lez-Lille - 2017 (3 mois)</li>
+                        <li><span>Dutexdor</span>, Houplines - 4 saisons de 2007 à 2010</li>
+                    </ul>
+                </div>
+                <div class="clean">
+                    <ul>
+                        <div class="jobtitle">Assistante administrative & ménagère <img src="./assets/img/002-cleaning.svg" alt="cleaning icon"></div>
+                        <li><span>ADMR</span>, Saint-Branchs - 2019 (2 mois)</li>
+                        <li><span>AXEO Services</span>, 2019 (1 mois)</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="main">
+        <section class="slide" id="slide">
+            <div class="chevron">
+                <label for="checkleft">La régie des oeuvres</label>
+                <img src="./assets/img/chevronright.png" alt="right chevron" id="checkleft">
+            </div>
+            <div class="chevron">
+                <label for="checkright">Le développement web</label>
+                <img src="./assets/img/chevronleft.png" alt="left chevron" id="checkright">
+            </div>
+        </section>
 
-            <section class="devweb" id="devweb">
+        <section class="registrar" id="registrar">
 
+            <!-- Formation -->
+            <div class="formation">
                 <h3><img id="registraricons" src="./assets/img/001-graduation-cap.svg" alt="">Formation</h3>
-                <p><span class="dateforma">De novembre 2020 à août 2021 :</span><span class="titreforma"> Titre
-                        professionnel "Développeur web & web mobile"</span>
-                </p>
-                <p>
-                    Formation conduisant à un équivalent Bac+2, dispensée par <a href="https://diplome.m2iformation.fr/diplomes/devenez-developpeur-web-et-web-mobile/">M2i
-                        Lille</a> et qui permet d'acquérir en 10 mois (700h de théorique) de solides bases dans le
-                    développement web. La formation
-                    prévoit 3 mois de stage (270h de pratique) en entreprise.
-                </p>
+                <div class="studies">
+                    Je suis diplômée d'un Master "Patrimoine & Musées" de l'Université de Lille & par mes stages, je
+                    me suis spécialisée en régie des oeuvres.
+                    La régie des oeuvres est un métier assez peu connu & pourtant au coeur de la mission de
+                    conservation des musées. Pour résumer ses activités variées, on retiendra que le régisseur est
+                    complémentaire du conservateur car il est davantage formé sur les techniques de conservation, la
+                    gestion physique, administrative & informatique des collections que sur l'histoire de l'art.
+                    <br>
+                    <a href="http://www.afroa.fr/">L'association Française des Régisseurs d'Oeuvres d'Art</a>
+                    propose articles & ressources pour découvrir ce métier plus en détails.
 
-                <h3><img id="registraricons" src="./assets/img/005-tools.svg" alt="tools-icon">Langages & outils</h3>
-                <div class="languagesicons">
-
-                    <div class="languages">
-                        <p class="languageslist">
-                            HTML, CSS (& SASS) & JavaSCript (& ReactJS / React Native), PHP.
-                        </p>
-                        <div id="divicons1">
-                            <img src="./assets/img/html_original_wordmark_logo_icon_146478.svg" alt="html-icon">
-                            <img src="./assets/img/css_original_wordmark_logo_icon_146576.svg" alt="css-icon">
-                            <img src="./assets/img/file_type_sass_icon_130182.svg" alt="sass-icon">
-                            <img src="./assets/img/file_type_js_official_icon_130509.svg" alt="js-icon">
-                            <img src="./assets/img/react_original_wordmark_logo_icon_146375.svg" alt="react-icon">
-                            <img src="./assets/img/new-php-logo.svg" alt="php-icon">
-                        </div>
-                    </div>
-
-                    <div class="library">
-                        <p class="bdd">
-                            La formation aborde les bases de données via MySQL & MongoDB. En plus du développement web,
-                            c'est un domaine qui m'intéresse particulièrement.
-
-                        </p>
-                        <div id="divicons2">
-                            <img src="./assets/img/mysql_original_wordmark_logo_icon_146417.svg" alt="mysql-icon">
-                            <img src="./assets/img/mongodb.svg" alt="mongo-icon">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="github">
-                    <h2>
-                        <img id="registraricons" src="./assets/img/005-tools.svg" alt="tools-icon">Projets communs &
-                        personnels >
-                        <a href="https://github.com/merlinkoma">
-                            <img id="registrariconslink1" src="./assets/img/bitbucket_official_logo_icon_170477.svg" alt="bitbucket-icon">
-                        </a>
-                        <a href="https://bitbucket.org/Merlinkoma/">
-                            <img id="registrariconslink2" src="./assets/img/github.svg" alt="github-icon">
-                        </a>
-                    </h2>
-                </div>
-
-                <div id="split">
-                </div>
-
-                <div class="otherjobs">
-                    <h3>Autres expériences professionnelles</h3>
-                    <p>
-                        Jobs étudiants ou emplois alimentaires ponctuels, j'ai de l'expérience dans d'autres domaines
-                        qui m'ont appris l'organisation et les relations clients, compétences qui me resteront utiles
-                        dans mon futur professionnel.
-                    </p>
-                    <div class="food">
-                        <ul>
-                            <div class="jobtitle">Chef de rang <img src="./assets/img/001-tray.svg" alt="restorant icon"></div>
-                            <li><span>Pizza Paï</span>, Lille-Passage 57 - 2010 puis ponctuellement jusque fin 2013 (2
-                                ans)</li>
-                            <li><span>Il Ristorante</span>, Bruay-la-Buissière, Marquette-lez-Lille (ouverture du
-                                restaurant) et Lille-Tanneurs - 2013 puis 2016 (1 ans 1/2)</li>
-                            <li><span>Basilic Café</span>, Lille-Esquermoise - 2014 (4 mois)</li>
-                        </ul>
-                    </div>
-                    <div class="order">
-                        <ul>
-                            <div class="jobtitle">Préparatrice de commandes <img src="./assets/img/003-factory.svg" alt="factory icon"></div>
-                            <li><span>Cléopâtre</span>, Ballan-Miré - 2018/2019 (4 mois)</li>
-                            <li><span>VertBaudet SADAS</span>, Marquette-lez-Lille - 2017 (3 mois)</li>
-                            <li><span>Dutexdor</span>, Houplines - 4 saisons de 2007 à 2010</li>
-                        </ul>
-                    </div>
-                    <div class="clean">
-                        <ul>
-                            <div class="jobtitle">Assistante administrative & ménagère <img src="./assets/img/002-cleaning.svg" alt="cleaning icon"></div>
-                            <li><span>ADMR</span>, Saint-Branchs - 2019 (2 mois)</li>
-                            <li><span>AXEO Services</span>, 2019 (1 mois)</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>2016 : Master "Patrimoine & Musées", Université de Lille.</li>
+                        <li>2015 : Licence d'histoire & géographie, Umeå Universitet (Suède, Comté de Västerbotten)
+                            & Université de Lille.</li>
+                        <li>2013 : Licence professionnelle Développement & Protection du Patrimoine, Université de
+                            Lille.</li>
+                        <li>2010 : Ecole du Louvre.</li>
+                        <li>2008 : Baccalauréat, filière scientifique.</li>
+                    </ul>
 
                 </div>
+            </div>
 
-            </section>
-
-            <section class="slide" id="slide">
-                <div class="chevron">
-                    <label for="checkleft">La régie des oeuvres</label>
-                    <img src="./assets/img/chevronright.png" alt="right chevron" id="checkleft">
+            <!-- Stages -->
+            <div class="stages">
+                <h3><img id="registraricons" src="./assets/img/008-computer.svg" alt=""> Stages</h3>
+                <div class="trainee">
+                    Mes stages ont eu lieu dans le cadre de mon passage à l'Ecole du Louvre -première expérience qui
+                    m'a permis de découvrir le métier de régisseur-, de ma licence puis de mon master
+                    professionnel·le·s.
+                    <ul>
+                        <li>2016 : MusVerre, Sars-Poteries</li>
+                        <li>2016 : Musée des Beaux-Arts, Cambrai</li>
+                        <li>2016 : Musée de la Chartreuse, Douai</li>
+                        <li>2014 : Musée du Mont-de-Piété, Bergues</li>
+                        <li>2010 & 2013 : Musée Benoît-De-Puydt, Bailleul</li>
+                    </ul>
                 </div>
-                <div class="chevron">
-                    <label for="checkright">Le développement web</label>
-                    <img src="./assets/img/chevronleft.png" alt="left chevron" id="checkright">
+            </div>
+
+            <!-- Expériences pro -->
+            <div class="exppro">
+                <h3><img id="registraricons" src="./assets/img/004-suitcase-1.svg" alt="">Chantiers de collection
+                </h3>
+                <div class="job">
+                    N'étant pas rattachée à un musée spécifique, j'ai mis mes compétences au service de différents
+                    musées de manière ponctuelle, soit par le biais de la société <a href="http://www.chenue.com/notre-savoir-faire/">André Chenue</a>, soit directement auprès
+                    des collectivités. Je suis intervenue dans le cadre de chantiers des collections afin de
+                    réaliser des inventaires, des récolement, des campagnes photographiques ou encore des
+                    réaménagements de réserves.
+                    <ul>
+                        <li>2019/2020 : inventaire, récolement, gestion administrative & juridique de la collection du
+                            Musée du Terroir, Loches</li>
+                        <li>2018 : inventaire, récolement & conditionnement avant transport du fonds "packaging" du
+                            Palais Galliera/ Musée de la mode, Paris (6 semaines)</li>
+                        <li>2017/2018 : informatisation des inventaires des collections de la Chambre des Commerces
+                            Marseille-Provence, Marseille (6 mois, référente d'équipe)</li>
+                        <li>2016 : récolement du fonds graphique, campagne photographique & préconnisations de
+                            conservation, musée des Beaux-Arts, Valenciennes (2 mois)</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
 
-            <section class="registrar" id="registrar">
-
-                <!-- Formation -->
-                <div class="formation">
-                    <h3><img id="registraricons" src="./assets/img/001-graduation-cap.svg" alt="">Formation</h3>
-                    <div class="studies">
-                        Je suis diplômée d'un Master "Patrimoine & Musées" de l'Université de Lille & par mes stages, je
-                        me suis spécialisée en régie des oeuvres.
-                        La régie des oeuvres est un métier assez peu connu & pourtant au coeur de la mission de
-                        conservation des musées. Pour résumer ses activités variées, on retiendra que le régisseur est
-                        complémentaire du conservateur car il est davantage formé sur les techniques de conservation, la
-                        gestion physique, administrative & informatique des collections que sur l'histoire de l'art.
-                        <br>
-                        <a href="http://www.afroa.fr/">L'association Française des Régisseurs d'Oeuvres d'Art</a>
-                        propose articles & ressources pour découvrir ce métier plus en détails.
-
-                        <ul>
-                            <li>2016 : Master "Patrimoine & Musées", Université de Lille.</li>
-                            <li>2015 : Licence d'histoire & géographie, Umeå Universitet (Suède, Comté de Västerbotten)
-                                & Université de Lille.</li>
-                            <li>2013 : Licence professionnelle Développement & Protection du Patrimoine, Université de
-                                Lille.</li>
-                            <li>2010 : Ecole du Louvre.</li>
-                            <li>2008 : Baccalauréat, filière scientifique.</li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <!-- Stages -->
-                <div class="stages">
-                    <h3><img id="registraricons" src="./assets/img/008-computer.svg" alt=""> Stages</h3>
-                    <div class="trainee">
-                        Mes stages ont eu lieu dans le cadre de mon passage à l'Ecole du Louvre -première expérience qui
-                        m'a permis de découvrir le métier de régisseur-, de ma licence puis de mon master
-                        professionnel·le·s.
-                        <ul>
-                            <li>2016 : MusVerre, Sars-Poteries</li>
-                            <li>2016 : Musée des Beaux-Arts, Cambrai</li>
-                            <li>2016 : Musée de la Chartreuse, Douai</li>
-                            <li>2014 : Musée du Mont-de-Piété, Bergues</li>
-                            <li>2010 & 2013 : Musée Benoît-De-Puydt, Bailleul</li>
-                        </ul>
-                    </div>
+            <!-- Galerie d'images -->
+            <div class="carousel-container">
+                <div class="carousel-title">
+                    Galerie, chantiers de collections
                 </div>
 
-                <!-- Expériences pro -->
-                <div class="exppro">
-                    <h3><img id="registraricons" src="./assets/img/004-suitcase-1.svg" alt="">Chantiers de collection
-                    </h3>
-                    <div class="job">
-                        N'étant pas rattachée à un musée spécifique, j'ai mis mes compétences au service de différents
-                        musées de manière ponctuelle, soit par le biais de la société <a href="http://www.chenue.com/notre-savoir-faire/">André Chenue</a>, soit directement auprès
-                        des collectivités. Je suis intervenue dans le cadre de chantiers des collections afin de
-                        réaliser des inventaires, des récolement, des campagnes photographiques ou encore des
-                        réaménagements de réserves.
-                        <ul>
-                            <li>2019/2020 : inventaire, récolement, gestion administrative & légale de la collection du
-                                Musée du Terroir, Loches</li>
-                            <li>2018 : inventaire, récolement & conditionnement avant transport du fonds "packaging" du
-                                Palais Galliera/ Musée de la mode, Paris (6 semaines)</li>
-                            <li>2017/2018 : informatisation des inventaires des collections de la Chambre des Commerces
-                                Marseille-Provence, Marseille (6 mois, référente d'équipe)</li>
-                            <li>2016 : récolement du fonds graphique, campagne photographique & préconnisations de
-                                conservation, musée des Beaux-Arts, Valenciennes (2 mois)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Gallerie d'images -->
-                <div class="jobpictures">
-                    <div id="slideleft" class="slide">
-                        *</div>
-                    <div class="img-registrar-carousel">
+                <div class="carousel-slides">
+                    <div class="images-div">
                         <img src="./assets/img/registrar/registrar (18).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
+                    </div>
+                    <div class="images-div">
                         <img src="./assets/img/registrar/registrar (19).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
+                    </div>
+                    <div class="images-div">
                         <img src="./assets/img/registrar/registrar (10).jpg" class="registrar-carousel" alt="" id='registrar-carousel'>
                     </div>
-                    <div id="slideright" class="slide">*</div>
                 </div>
-            </section>
 
+            </div>
         </section>
 
-        <section class="interests">
-            <div class="outside">Le dev web, la régie, mais pas que.</div>
+    </section>
 
-            <p class="presentation">J'ai adoré mon premier métier et je suis tout aussi motivée par mon nouveau domaine
-                mais en dehors du travail, j'ai d'autres passions que j'aime partager :</p>
+    <section class="interests">
+        <div class="outside">Le dév. web, la régie, mais pas que.</div>
 
-            <div class="languages fun">
-                <span>
-                    <img src="./assets/img/002-languages.svg" id="interestsicons" alt="languages icon"> Langues &
-                    linguistiques :</span>
-                J'ai vécu un an en Suède pendant mes
-                études, à <a href="https://fr.wikipedia.org/wiki/Ume%C3%A5">Umeå</a>, où j'ai appris l'anglais & le
-                suédois. Aujourd'hui j'ai une compétence professionnelle en anglais & me débrouille en suédois. Ayant
-                été frontalière avec la Belgique flammande, j'ai aussi appris le néerlandais, langue dans laquelle j'ai
-                de bonnes
-                bases, tout comme en espagnol. Pour le plaisir, j'ai acquis quelques notions de gaélique écossais, de
-                finnois sur <a href="https://www.duolingo.com/profile/Merlin-merlin">Duolingo</a> & je rêve de m'initier
-                à l'islandais.
-            </div>
+        <p class="presentation">J'ai adoré mon premier métier et je suis tout aussi motivée par mon nouveau domaine
+            mais en dehors du travail, j'ai d'autres passions que j'aime partager :</p>
 
-            <div class="sports fun">
-                <span>
-                    <img src="./assets/img/001-hockey.svg" alt="hockeyicon" id="interestsicons"> Le
-                    hockey :</span> Une seconde passion qui m'a suivi à mon retour de Suède. J'ai pratiqué 2 ans en
-                amateur avec l'équipe senior de Joué-les-Tours & j'espère être rapidement de retour sur la glace.
-            </div>
-
-            <div class="sew fun">
-                <span>
-                    <img src="./assets/img/003-mannequin.svg" alt="hockeyicon" id="interestsicons">La
-                    couture :</span> et quand je ne joue pas au hockey, je couds. C'est une passion découverte
-                tardivement mais qui ne me quitte plus.
-            </div>
-
-        </section>
-
-    </main>
-    <footer>
-
-        <div class="icons-credits">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>, <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
-                perfect</a>, <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a>
-            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>
-            © 2021 MerlinK
+        <div class="languages fun">
+            <span>
+                <img src="./assets/img/002-languages.svg" id="interestsicons" alt="languages icon"> Langues &
+                linguistiques :</span>
+            J'ai vécu un an en Suède pendant mes
+            études, à <a href="https://fr.wikipedia.org/wiki/Ume%C3%A5">Umeå</a>, où j'ai appris l'anglais & le
+            suédois. Aujourd'hui j'ai une compétence professionnelle en anglais & me débrouille en suédois. Ayant
+            été frontalière avec la Belgique flammande, j'ai des notions de néerlandais, j'ai aussi quelques bases en espagnol. Pour le plaisir, je m'initie au gaélique écossais, au finois & bien d'autres grâce à <a href="https://www.duolingo.com/profile/Merlin-merlin">Duolingo</a>. J'ai récemment débuté l'islandais, un rêve de longue date.
         </div>
-    </footer>
-    <script type="text/javascript" src="./assets/index.js"></script>
+
+        <div class="sports fun">
+            <span>
+                <img src="./assets/img/001-hockey.svg" alt="hockeyicon" id="interestsicons"> Le
+                hockey :</span> Une seconde passion qui m'a suivi à mon retour de Suède. J'ai pratiqué 2 ans en
+            amateur avec l'équipe senior de Joué-les-Tours & j'espère être rapidement de retour sur la glace.
+        </div>
+
+        <div class="sew fun">
+            <span>
+                <img src="./assets/img/003-mannequin.svg" alt="hockeyicon" id="interestsicons">La
+                couture :</span> et quand je ne joue pas au hockey, je couds. C'est une passion découverte
+            tardivement mais qui ne me quitte plus.
+        </div>
+
+    </section>
+
+</main>
+<footer>
+
+    <div class="icons-credits">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>, <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+            perfect</a>, <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>
+        © 2021 MerlinK
+    </div>
+</footer>
+<script type="text/javascript" src="./assets/index.js"></script>
 
 </body>
 

@@ -13,12 +13,23 @@ function slideR() {
 }
 slideR();
 
-function slideSlowL(){
-    let slideleft = document.getElementById('slideleft');
-    for (let i = 0; i < 10; i++) {
-        slideleft.addEventListener('mouseover', function (){
-            document.getElementById('registrar-carousel').style.transform = `translateX(-${i}vw)`;
-        })
-    }  
-}
-slideSlowL();
+let slideIndex = 0;
+
+const showSlides = () => {
+    const slides = document.getElementsByClassName("images-div");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000);
+};
+
+showSlides();

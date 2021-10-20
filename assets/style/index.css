@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h3 img#registraricons {
   width: 2vw;
   padding: 0 1% 0 0;
@@ -56,32 +60,173 @@ div#slide {
   font-size: 9em;
 }
 
-div.jobpictures {
-  width: 70vw;
-  box-shadow: 0 0 20px #242e31;
+div.carousel-container {
   display: flex;
-  flex-direction: row;
-  margin: 5% auto;
-}
-div.jobpictures div.slide {
-  width: 5vw;
-  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  font-size: 10em;
+  margin: auto;
+  width: 45vw;
+  box-shadow: 0 0 20px #858881;
 }
-div.jobpictures div.img-registrar-carousel {
-  width: 60vw;
+div.carousel-container div.carousel-title {
+  font-weight: 700;
+}
+div.carousel-container div.carousel-slides {
+  width: 40vw;
   display: flex;
   flex-direction: row;
-  border: 6px solid #F1F1ED;
   overflow-x: hidden;
+  justify-content: center;
 }
-div.jobpictures div.img-registrar-carousel img.registrar-carousel {
+div.carousel-container div.carousel-slides div.images-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+div.carousel-container div.carousel-slides div.images-div img.registrar-carousel {
   height: 20vw;
   width: auto;
-  box-shadow: 0 0 20px #242e31;
   margin: 1%;
-  border: 1px solid #263741;
+}
+
+body {
+  background-color: #93968F;
+  color: #F1F1ED;
+  font-family: Montserrat Alternates;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+body h2 {
+  margin-left: 10vw;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 3vw 0 0 5vw;
+}
+body form label {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 1%;
+}
+body form input {
+  height: 30px;
+  margin-bottom: 3%;
+}
+body form input::placeholder {
+  font-family: Montserrat Alternates;
+  padding-left: 1%;
+}
+body form input:focus {
+  outline: none;
+  border: 2px solid #907D50;
+}
+body form textarea:focus {
+  outline: none;
+  border: 2px solid #907D50;
+}
+body form button {
+  margin: 3% 0;
+  background-color: #907D50;
+  color: #F1F1ED;
+  border: 1px solid #F1F1ED;
+  height: 25px;
+}
+
+h3 img#registraricons {
+  width: 2vw;
+  padding: 0 1% 0 0;
+}
+
+h2 img#registraricons {
+  width: 2vw;
+  padding: 1% 1% 0 1%;
+}
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 a img#registrariconslink1 {
+  width: 8vw;
+  padding: 1% 3% 0 6%;
+}
+h2 a img#registrariconslink2 {
+  width: 2vw;
+  padding: 1% 1% 0 0;
+}
+
+#divicons1 img {
+  width: 5vw;
+  height: auto;
+  padding: 3% 3% 1% 1%;
+}
+
+#divicons2 img {
+  width: 6vw;
+  height: auto;
+  padding: 3% 5% 3% 5%;
+  align-items: center;
+}
+
+div#split {
+  border-top: solid 3px #F1F1ED;
+  width: 30%;
+  margin: 25px auto 45px;
+}
+
+div.jobtitle img {
+  width: 3vw;
+  padding-left: 2%;
+}
+
+#interestsicons {
+  width: 3vw;
+  height: auto;
+  padding: 0 1%;
+}
+
+div#slide {
+  font-size: 9em;
+}
+
+div.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 45vw;
+  box-shadow: 0 0 20px #858881;
+}
+div.carousel-container div.carousel-title {
+  font-weight: 700;
+}
+div.carousel-container div.carousel-slides {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: center;
+}
+div.carousel-container div.carousel-slides div.images-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+div.carousel-container div.carousel-slides div.images-div img.registrar-carousel {
+  height: 20vw;
+  width: auto;
+  margin: 1%;
 }
 
 body {
@@ -111,7 +256,7 @@ body header nav ul li {
   color: #F1F1ED;
   margin: 1%;
   list-style: none;
-  width: 10vw;
+  min-width: 10vw;
   font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 10px;
@@ -125,35 +270,36 @@ body header nav ul li a:hover {
   border-bottom: 1px solid #907D50;
   transition: all 0.5s ease-in-out;
 }
-body header div.banner {
+
+div.banner {
   margin: 0;
   padding: 0;
   font-family: Caveat;
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: 40vh;
   background-color: #263741;
   display: flex;
 }
-body header div.banner div.image {
+div.banner div.image {
   width: 30%;
   display: flex;
   align-items: center;
 }
-body header div.banner div.image img {
+div.banner div.image img {
   width: 200px;
   height: auto;
   z-index: 1;
   box-shadow: 0 0 20px #01171f;
   border-radius: 50px 15px;
 }
-body header div.banner div.name {
+div.banner div.name {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 2;
 }
-body header div.banner div.name div.nametitle {
+div.banner div.name div.nametitle {
   color: #907D50;
   font-size: 75px;
   font-weight: 700;
@@ -161,7 +307,7 @@ body header div.banner div.name div.nametitle {
   margin: 0 auto;
   text-align: center;
 }
-body header div.banner div.name div.subtitle {
+div.banner div.name div.subtitle {
   color: #F1F1ED;
   font-size: 30px;
   font-weight: 500;
@@ -169,15 +315,16 @@ body header div.banner div.name div.subtitle {
   margin: 0 auto;
   text-align: center;
 }
-body header div.banner div.name div.line {
+div.banner div.name div.line {
   border-top: solid 3px #907D50;
   width: 30%;
   margin: 15px auto;
 }
-body main {
+
+main {
   font-family: Montserrat Alternates;
 }
-body main section.aboutme {
+main section.aboutme {
   background-color: #263741;
   color: #F1F1ED;
   font-family: Montserrat Alternates;
@@ -189,61 +336,61 @@ body main section.aboutme {
   background-position-y: center;
   height: 300px;
 }
-body main section.aboutme h3 {
+main section.aboutme h3 {
   padding: 25px;
   margin: 0 auto;
   width: 80vw;
 }
-body main section.aboutme p.aboutme {
+main section.aboutme p.aboutme {
   height: auto;
   margin: 0 auto;
   padding: 0;
   width: 70vw;
   text-align: justify;
 }
-body main section#main {
+main section#main {
   width: 200vw;
   transition: 500ms ease-in-out;
   display: flex;
 }
-body main section#main section.devweb {
+main section#main section.devweb {
   width: 80vw;
   background-color: #93968F;
 }
-body main section#main section.devweb h3 {
+main section#main section.devweb h3 {
   color: #F1F1ED;
   font-size: 2em;
   padding-left: 10%;
   margin: 2% 0;
 }
-body main section#main section.devweb p {
+main section#main section.devweb p {
   color: #F1F1ED;
   width: 80%;
   margin: 0 auto;
   padding: 1% 0 1% 0;
   text-align: justify;
 }
-body main section#main section.devweb p span.dateforma {
+main section#main section.devweb p span.dateforma {
   font-weight: bold;
   font-size: 1.1em;
   color: #263741;
 }
-body main section#main section.devweb p span.titreforma {
+main section#main section.devweb p span.titreforma {
   font-weight: bold;
   font-size: 1.3em;
 }
-body main section#main section.devweb p a {
+main section#main section.devweb p a {
   text-decoration: none;
   color: #263741;
 }
-body main section#main section.devweb p a:hover {
+main section#main section.devweb p a:hover {
   font-size: 1.1em;
 }
-body main section#main section.devweb div.languagesicons {
+main section#main section.devweb div.languagesicons {
   display: flex;
   flex-direction: column;
 }
-body main section#main section.devweb div.languagesicons div.languages {
+main section#main section.devweb div.languagesicons div.languages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,15 +398,20 @@ body main section#main section.devweb div.languagesicons div.languages {
   margin: 2% 8% 2% 8%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.devweb div.languagesicons div.languages p.languageslist {
+main section#main section.devweb div.languagesicons div.languages p.languageslist {
   margin: 0;
 }
-body main section#main section.devweb div.languagesicons div.languages div#divicons1 {
+main section#main section.devweb div.languagesicons div.languages div#divicons1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-body main section#main section.devweb div.languagesicons div.library {
+main section#main section.devweb div.languagesicons div.languages div#divicons1 img {
+  margin: 2vh 1vw 0;
+  background-color: #F1F1ED;
+  box-shadow: 0 0 20px #263741;
+}
+main section#main section.devweb div.languagesicons div.library {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,26 +419,31 @@ body main section#main section.devweb div.languagesicons div.library {
   margin: 2% 8% 2% 8%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.devweb div.languagesicons div.library p.bdd {
+main section#main section.devweb div.languagesicons div.library p.bdd {
   margin: 0;
 }
-body main section#main section.devweb div.languagesicons div.library div#divicons2 {
+main section#main section.devweb div.languagesicons div.library div#divicons2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-body main section#main section.devweb div.github {
+main section#main section.devweb div.languagesicons div.library div#divicons2 img {
+  margin: 2vh 1vw 0;
+  background-color: #F1F1ED;
+  box-shadow: 0 0 20px #263741;
+}
+main section#main section.devweb div.github {
   display: flex;
   padding-left: 2vw;
 }
-body main section#main section.devweb div.github h2 {
+main section#main section.devweb div.github h2 {
   color: #F1F1ED;
   font-size: 1.5em;
   padding-left: 10%;
   margin: 2% 0;
   font-weight: 600;
 }
-body main section#main section.slide {
+main section#main section.slide {
   font-weight: bold;
   width: 40vw;
   color: #F1F1ED;
@@ -295,7 +452,7 @@ body main section#main section.slide {
   justify-content: space-around;
   align-items: center;
 }
-body main section#main section.slide div.chevron {
+main section#main section.slide div.chevron {
   position: sticky;
   bottom: 20%;
   top: 20%;
@@ -304,190 +461,192 @@ body main section#main section.slide div.chevron {
   align-items: center;
   padding: 3% 0 3% 0;
 }
-body main section#main section.slide div.chevron label {
+main section#main section.slide div.chevron label {
   font-size: 1.2rem;
   padding: 2%;
 }
-body main section#main section.slide div.chevron img {
+main section#main section.slide div.chevron img {
   width: 20%;
   max-height: 20%;
 }
-body main section#main section.slide div.chevron img:hover {
+main section#main section.slide div.chevron img:hover {
   width: 22%;
 }
-body main section#main section.registrar {
+main section#main section.registrar {
   width: 80vw;
   background-color: #93968F;
   color: #F1F1ED;
 }
-body main section#main section.registrar div.formation {
+main section#main section.registrar div.formation {
   width: 100%;
 }
-body main section#main section.registrar div.formation h3 {
+main section#main section.registrar div.formation h3 {
   font-size: 2em;
   padding-left: 5%;
 }
-body main section#main section.registrar div.formation div.studies {
+main section#main section.registrar div.formation div.studies {
   width: 80%;
   margin: 0 auto 0 5%;
   text-align: justify;
 }
-body main section#main section.registrar div.formation div.studies a {
+main section#main section.registrar div.formation div.studies a {
   text-decoration: none;
   color: #263741;
 }
-body main section#main section.registrar div.formation div.studies a:hover {
+main section#main section.registrar div.formation div.studies a:hover {
   font-size: 1.1em;
 }
-body main section#main section.registrar div.formation div.studies ul {
+main section#main section.registrar div.formation div.studies ul {
   margin-left: 8%;
   padding: 3%;
   margin-bottom: 6%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.registrar div.formation div.studies ul li {
+main section#main section.registrar div.formation div.studies ul li {
   padding: 1% 0 1% 0;
 }
-body main section#main section.registrar div.formation div.degrees {
+main section#main section.registrar div.formation div.degrees {
   width: 95%;
   margin: 0 auto 0 7%;
 }
-body main section#main section.registrar div.formation div.degrees h4 {
+main section#main section.registrar div.formation div.degrees h4 {
   font-size: 1.2em;
 }
-body main section#main section.registrar div.formation div.degrees ul {
+main section#main section.registrar div.formation div.degrees ul {
   padding: 3%;
   margin-bottom: 6%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.registrar div.formation div.degrees ul li {
+main section#main section.registrar div.formation div.degrees ul li {
   padding: 1% 0 1% 0;
 }
-body main section#main section.registrar div.stages {
+main section#main section.registrar div.stages {
   width: 100%;
 }
-body main section#main section.registrar div.stages h3 {
+main section#main section.registrar div.stages h3 {
   font-size: 2em;
   padding-left: 5%;
 }
-body main section#main section.registrar div.stages div.trainee {
+main section#main section.registrar div.stages div.trainee {
   width: 80%;
   margin: 0 auto 0 5%;
   text-align: justify;
 }
-body main section#main section.registrar div.stages div.trainee ul {
+main section#main section.registrar div.stages div.trainee ul {
   margin-left: 8%;
   margin-bottom: 6%;
   padding: 3%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.registrar div.stages div.trainee ul li {
+main section#main section.registrar div.stages div.trainee ul li {
   padding: 1% 0 1% 0;
 }
-body main section#main section.registrar div.exppro {
+main section#main section.registrar div.exppro {
   width: 100%;
 }
-body main section#main section.registrar div.exppro h3 {
+main section#main section.registrar div.exppro h3 {
   font-size: 2em;
   padding-left: 5%;
 }
-body main section#main section.registrar div.exppro div.job {
+main section#main section.registrar div.exppro div.job {
   width: 80%;
   margin: 0 auto 0 5%;
   text-align: justify;
 }
-body main section#main section.registrar div.exppro div.job a {
+main section#main section.registrar div.exppro div.job a {
   text-decoration: none;
   color: #263741;
 }
-body main section#main section.registrar div.exppro div.job a:hover {
+main section#main section.registrar div.exppro div.job a:hover {
   font-size: 1.1em;
 }
-body main section#main section.registrar div.exppro div.job ul {
+main section#main section.registrar div.exppro div.job ul {
   margin-left: 8%;
   padding: 3%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main section.registrar div.exppro div.job ul li {
+main section#main section.registrar div.exppro div.job ul li {
   padding: 1% 0 1% 0;
 }
-body main section#main div.otherjobs {
+main section#main div.otherjobs {
   color: #F1F1ED;
   width: 80%;
   margin: 0 auto;
   text-align: justify;
 }
-body main section#main div.otherjobs ul {
+main section#main div.otherjobs ul {
   padding: 3%;
   margin-bottom: 3%;
   box-shadow: 0 0 20px #858881;
 }
-body main section#main div.otherjobs ul div.jobtitle {
+main section#main div.otherjobs ul div.jobtitle {
   font-size: 1.2em;
   font-weight: 700;
   text-align: end;
   border-bottom: 1px solid;
   margin-bottom: 2%;
 }
-body main section#main div.otherjobs ul li {
+main section#main div.otherjobs ul li {
   padding: 1% 0 1% 3%;
 }
-body main section#main div.otherjobs ul li span {
+main section#main div.otherjobs ul li span {
   font-weight: 600;
 }
-body section.interests {
+
+section.interests {
   margin: 0;
   padding: 1% 0 3%;
   background-color: #263741;
   color: #F1F1ED;
 }
-body section.interests div.outside {
+section.interests div.outside {
   font-size: 1.5em;
   font-weight: 700;
   color: #F1F1ED;
   padding: 2% 0 0 10%;
 }
-body section.interests p {
+section.interests p {
   width: 80%;
   margin: 1% auto;
 }
-body section.interests div.languages {
+section.interests div.languages {
   margin: 2% 10% 2% 5%;
 }
-body section.interests div.sports {
+section.interests div.sports {
   margin: 2% 7% 2% 8%;
 }
-body section.interests div.sew {
+section.interests div.sew {
   margin: 2% 4% 2% 11%;
 }
-body section.interests div.fun {
+section.interests div.fun {
   padding: 1%;
   text-align: justify;
   box-shadow: 0 0 20px #222e35;
 }
-body section.interests div.fun span {
+section.interests div.fun span {
   font-weight: 600;
   color: #8CA2AA;
 }
-body section.interests div.fun a {
+section.interests div.fun a {
   text-decoration: none;
   color: #8CA2AA;
 }
-body section.interests div.fun a:hover {
+section.interests div.fun a:hover {
   font-size: 1.1em;
 }
-body footer {
+
+footer {
   background-color: #8CA2AA;
   color: #F1F1ED;
   font-size: 0.8em;
   text-align: center;
   padding: 2% 0;
 }
-body footer a {
+footer a {
   text-decoration: none;
   color: #263741;
 }
-body footer a:hover {
+footer a:hover {
   color: #907D50;
 }
 

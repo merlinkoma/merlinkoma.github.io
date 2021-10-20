@@ -1,175 +1,206 @@
 @import "variables";
 @import "icons";
 @import "pictures";
+@import "contact";
+@import "doctype";
+@import "banner";
 
-body {
-    margin    : 0;
-    padding   : 0;
-    width     : 100vw;
-    overflow-x: hidden;
-    box-sizing: border-box;
 
-    header {
-        width         : 100%;
-        display       : flex;
-        flex-direction: column;
 
-        nav {
-            background-color: $blue;
-            width           : 100%;
-            font-family     : Montserrat Alternates;
+main {
+    font-family: Montserrat Alternates;
 
-            ul {
-                display        : flex;
-                flex-direction : row;
-                justify-content: flex-end;
-                margin-right: 5vw;
+    section.aboutme {
+        background-color     : $blue;
+        color                : $light;
+        font-family          : Montserrat Alternates;
+        display              : flex;
+        flex-direction       : column;
+        justify-content      : center;
+        background-image     : url(../img/filrouge9.jpg);
+        background-size      : cover;
+        background-position-y: center;
+        height               : 300px;
 
-                li {
-                    color      : $light;
-                    margin     : 1%;
-                    list-style : none;
-                    width      : 10vw;
-                    font-size  : 1.2em;
-                    font-weight: 600;
-                    margin-bottom: 10px;
+        h3 {
+            padding: 25px;
+            margin : 0 auto;
+            width  : 80vw;
+        }
 
-                    a {
-                        text-decoration: none;
-                        color          : inherit;
+        p.aboutme {
+            height    : auto;
+            margin    : 0 auto;
+            padding   : 0;
+            width     : 70vw;
+            text-align: justify;
+        }
+    }
 
-                        &:hover{
-                            color: $gold;
-                            border-bottom: 1px solid $gold;
-                            transition : all .5s ease-in-out;                  
+    section#main {
+        width     : 200vw;
+        transition: 500ms ease-in-out;
+        display   : flex;
+
+        section.devweb {
+            width           : 80vw;
+            background-color: $grey;
+
+            h3 {
+                color       : $light;
+                font-size   : 2em;
+                padding-left: 10%;
+                margin      : 2% 0;
+            }
+
+            p {
+                color     : $light;
+                width     : 80%;
+                margin    : 0 auto;
+                padding   : 1% 0 1% 0;
+                text-align: justify;
+
+                span.dateforma {
+                    font-weight: bold;
+                    font-size  : 1.1em;
+                    color      : $blue;
+                }
+
+                span.titreforma {
+                    font-weight: bold;
+                    font-size  : 1.3em;
+                }
+
+                a {
+                    text-decoration: none;
+                    color          : $blue;
+
+                    &:hover {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+            div.languagesicons {
+                display       : flex;
+                flex-direction: column;
+
+                div.languages {
+                    display       : flex;
+                    flex-direction: column;
+                    align-items   : center;
+                    padding       : 3%;
+                    margin        : 2% 8% 2% 8%;
+                    box-shadow    : 0 0 20px $shadow1;
+
+                    p.languageslist {
+                        margin: 0;
+                    }
+
+                    div#divicons1 {
+                        display        : flex;
+                        flex-direction : row;
+                        justify-content: space-around;
+
+                        img {
+                            margin          : 2vh 1vw 0;
+                            background-color: $light;
+                            box-shadow      : 0 0 20px $blue;
+                        }
+                    }
+                }
+
+                div.library {
+                    display       : flex;
+                    flex-direction: column;
+                    align-items   : center;
+                    padding       : 3%;
+                    margin        : 2% 8% 2% 8%;
+                    box-shadow    : 0 0 20px $shadow1;
+
+                    p.bdd {
+                        margin: 0;
+                    }
+
+                    div#divicons2 {
+                        display        : flex;
+                        flex-direction : row;
+                        justify-content: center;
+
+                        img {
+                            margin          : 2vh 1vw 0;
+                            background-color: $light;
+                            box-shadow      : 0 0 20px $blue;
                         }
                     }
                 }
             }
-        }
 
-        div.banner {
-            margin          : 0;
-            padding         : 0;
-            font-family     : Caveat;
-            width           : 100%;
-            height          : 300px;
-            background-color: $blue;
-            display         : flex;
+            div.github {
+                display     : flex;
+                padding-left: 2vw;
 
-            div.image {
-                width      : 30%;
-                display    : flex;
-                align-items: center;
-
-                img {
-                    width        : 200px;
-                    height       : auto;
-                    // transform: translate(-350px, -68px);
-                    z-index      : 1;
-                    box-shadow   : 0 0 20px #01171f;
-                    border-radius: 50px 15px;
-                }
-            }
-
-            div.name {
-                width          : 70%;
-                display        : flex;
-                flex-direction : column;
-                justify-content: center;
-                z-index        : 2;
-
-                div.nametitle {
-                    color      : $gold;
-                    font-size  : 75px;
-                    font-weight: 700;
-                    width      : 80%;
-                    margin     : 0 auto;
-                    text-align : center;
-                }
-
-                div.subtitle {
-                    color      : $light;
-                    font-size  : 30px;
-                    font-weight: 500;
-                    width      : 80%;
-                    margin     : 0 auto;
-                    text-align : center;
-                }
-
-                div.line {
-                    border-top: solid 3px $gold;
-                    width     : 30%;
-                    margin    : 15px auto;
-                }
-            }
-        }
-
-    }
-
-    main {
-        font-family: Montserrat Alternates;
-
-        section.aboutme {
-            background-color     : $blue;
-            color                : $light;
-            font-family          : Montserrat Alternates;
-            display              : flex;
-            flex-direction       : column;
-            justify-content      : center;
-            background-image     : url(../img/filrouge9.jpg);
-            background-size      : cover;
-            background-position-y: center;
-            height               : 300px;
-
-            h3 {
-                padding: 25px;
-                margin : 0 auto;
-                width  : 80vw;
-            }
-
-            p.aboutme {
-                height    : auto;
-                margin    : 0 auto;
-                padding   : 0;
-                width     : 70vw;
-                text-align: justify;
-            }
-        }
-
-        section#main {
-            width     : 200vw;
-            transition: 500ms ease-in-out;
-            display   : flex;
-
-            section.devweb {
-                width           : 80vw;
-                background-color: $grey;
-
-                h3 {
+                h2 {
                     color       : $light;
-                    font-size   : 2em;
+                    font-size   : 1.5em;
                     padding-left: 10%;
                     margin      : 2% 0;
+                    font-weight : 600;
+                }
+            }
+        }
+
+        section.slide {
+            font-weight     : bold;
+            width           : 40vw;
+            color           : $light;
+            background-color: $gold;
+            display         : flex;
+            justify-content : space-around;
+            align-items     : center;
+
+            div.chevron {
+                position      : sticky;
+                bottom        : 20%;
+                top           : 20%;
+                display       : flex;
+                flex-direction: column;
+                align-items   : center;
+                padding       : 3% 0 3% 0;
+
+                label {
+                    font-size: 1.2rem;
+                    padding  : 2%;
                 }
 
-                p {
-                    color     : $light;
+                img {
+                    width     : 20%;
+                    max-height: 20%;
+
+                    &:hover {
+                        width: 22%;
+                    }
+                }
+            }
+        }
+
+        section.registrar {
+            width           : 80vw;
+            background-color: $grey;
+            color           : $light;
+
+            div.formation {
+                width: 100%;
+
+                h3 {
+                    font-size   : 2em;
+                    padding-left: 5%;
+                }
+
+                div.studies {
                     width     : 80%;
-                    margin    : 0 auto;
-                    padding   : 1% 0 1% 0;
+                    margin    : 0 auto 0 5%;
                     text-align: justify;
-
-                    span.dateforma {
-                        font-weight: bold;
-                        font-size  : 1.1em;
-                        color      : $blue;
-                    }
-
-                    span.titreforma {
-                        font-weight: bold;
-                        font-size  : 1.3em;
-                    }
 
                     a {
                         text-decoration: none;
@@ -179,316 +210,196 @@ body {
                             font-size: 1.1em;
                         }
                     }
-                }
 
-                div.languagesicons {
-                    display       : flex;
-                    flex-direction: column;
+                    ul {
+                        margin-left  : 8%;
+                        padding      : 3%;
+                        margin-bottom: 6%;
+                        box-shadow   : 0 0 20px $shadow1;
 
-                    div.languages {
-                        display       : flex;
-                        flex-direction: column;
-                        align-items   : center;
-                        padding       : 3%;
-                        margin        : 2% 8% 2% 8%;
-                        box-shadow    : 0 0 20px $shadow1;
-
-                        p.languageslist {
-                            margin: 0;
-                        }
-
-                        div#divicons1 {
-                            display        : flex;
-                            flex-direction : row;
-                            justify-content: space-around;
-                        }
-                    }
-
-                    div.library {
-                        display       : flex;
-                        flex-direction: column;
-                        align-items   : center;
-                        padding       : 3%;
-                        margin        : 2% 8% 2% 8%;
-                        box-shadow    : 0 0 20px $shadow1;
-
-                        p.bdd {
-                            margin: 0;
-                        }
-
-                        div#divicons2 {
-                            display        : flex;
-                            flex-direction : row;
-                            justify-content: center;
+                        li {
+                            padding: 1% 0 1% 0;
                         }
                     }
                 }
 
-                div.github {
-                    display     : flex;
-                    padding-left: 2vw;
+                div.degrees {
+                    width : 95%;
+                    margin: 0 auto 0 7%;
 
-                    h2 {
-                        color       : $light;
-                        font-size   : 1.5em;
-                        padding-left: 10%;
-                        margin      : 2% 0;
-                        font-weight : 600;
+                    h4 {
+                        font-size: 1.2em;
+                    }
+
+                    ul {
+                        padding      : 3%;
+                        margin-bottom: 6%;
+                        box-shadow   : 0 0 20px $shadow1;
+
+                        li {
+                            padding: 1% 0 1% 0;
+                        }
                     }
                 }
             }
 
-            section.slide {
-                font-weight     : bold;
-                width           : 40vw;
-                color           : $light;
-                background-color: $gold;
-                display         : flex;
-                justify-content : space-around;
-                align-items     : center;
+            div.stages {
+                width: 100%;
 
-                div.chevron {
-                    position      : sticky;
-                    bottom        : 20%;
-                    top           : 20%;
-                    display       : flex;
-                    flex-direction: column;
-                    align-items   : center;
-                    padding       : 3% 0 3% 0;
+                h3 {
+                    font-size   : 2em;
+                    padding-left: 5%;
+                }
 
-                    label {
-                        font-size: 1.2rem;
-                        padding  : 2%;
+                div.trainee {
+                    width     : 80%;
+                    margin    : 0 auto 0 5%;
+                    text-align: justify;
+
+                    ul {
+                        margin-left  : 8%;
+                        margin-bottom: 6%;
+                        padding      : 3%;
+                        box-shadow   : 0 0 20px $shadow1;
+
+                        li {
+                            padding: 1% 0 1% 0;
+                        }
                     }
+                }
+            }
 
-                    img {
-                        width     : 20%;
-                        max-height: 20%;
+            div.exppro {
+                width: 100%;
+
+                h3 {
+                    font-size   : 2em;
+                    padding-left: 5%;
+                }
+
+                div.job {
+                    width     : 80%;
+                    margin    : 0 auto 0 5%;
+                    text-align: justify;
+
+                    a {
+                        text-decoration: none;
+                        color          : $blue;
 
                         &:hover {
-                            width: 22%;
-                        }
-                    }
-                }
-            }
-
-            section.registrar {
-                width           : 80vw;
-                background-color: $grey;
-                color           : $light;
-
-                div.formation {
-                    width: 100%;
-
-                    h3 {
-                        font-size   : 2em;
-                        padding-left: 5%;
-                    }
-
-                    div.studies {
-                        width     : 80%;
-                        margin    : 0 auto 0 5%;
-                        text-align: justify;
-
-                        a {
-                            text-decoration: none;
-                            color          : $blue;
-
-                            &:hover {
-                                font-size: 1.1em;
-                            }
-                        }
-
-                        ul {
-                            margin-left  : 8%;
-                            padding      : 3%;
-                            margin-bottom: 6%;
-                            box-shadow   : 0 0 20px $shadow1;
-
-                            li {
-                                padding: 1% 0 1% 0;
-                            }
+                            font-size: 1.1em;
                         }
                     }
 
-                    div.degrees {
-                        width : 95%;
-                        margin: 0 auto 0 7%;
+                    ul {
+                        margin-left: 8%;
+                        padding    : 3%;
+                        box-shadow : 0 0 20px #858881;
 
-                        h4 {
-                            font-size: 1.2em;
-                        }
-
-                        ul {
-                            padding      : 3%;
-                            margin-bottom: 6%;
-                            box-shadow   : 0 0 20px $shadow1;
-
-                            li {
-                                padding: 1% 0 1% 0;
-                            }
+                        li {
+                            padding: 1% 0 1% 0;
                         }
                     }
-                }
 
-                div.stages {
-                    width: 100%;
-
-                    h3 {
-                        font-size   : 2em;
-                        padding-left: 5%;
-                    }
-
-                    div.trainee {
-                        width     : 80%;
-                        margin    : 0 auto 0 5%;
-                        text-align: justify;
-
-                        ul {
-                            margin-left  : 8%;
-                            margin-bottom: 6%;
-                            padding      : 3%;
-                            box-shadow   : 0 0 20px $shadow1;
-
-                            li {
-                                padding: 1% 0 1% 0;
-                            }
-                        }
-                    }
-                }
-
-                div.exppro {
-                    width: 100%;
-
-                    h3 {
-                        font-size   : 2em;
-                        padding-left: 5%;
-                    }
-
-                    div.job {
-                        width     : 80%;
-                        margin    : 0 auto 0 5%;
-                        text-align: justify;
-
-                        a {
-                            text-decoration: none;
-                            color          : $blue;
-
-                            &:hover {
-                                font-size: 1.1em;
-                            }
-                        }
-
-                        ul {
-                            margin-left: 8%;
-                            padding    : 3%;
-                            box-shadow : 0 0 20px #858881;
-
-                            li {
-                                padding: 1% 0 1% 0;
-                            }
-                        }
-
-                    }
-                }
-            }
-
-            div.otherjobs {
-                color     : $light;
-                width     : 80%;
-                margin    : 0 auto;
-                text-align: justify;
-
-                ul {
-                    div.jobtitle {
-                        font-size    : 1.2em;
-                        font-weight  : 700;
-                        text-align   : end;
-                        border-bottom: 1px solid;
-                        margin-bottom: 2%;
-                    }
-
-                    padding      : 3%;
-                    margin-bottom: 3%;
-                    box-shadow   : 0 0 20px $shadow1;
-
-                    li {
-                        padding: 1% 0 1% 3%;
-
-                        span {
-                            font-weight: 600;
-                        }
-                    }
                 }
             }
         }
-    }
 
-    section.interests {
-        margin          : 0;
-        padding         : 1% 0 3%;
-        background-color: $blue;
-        color           : $light;
-
-        div.outside {
-            font-size  : 1.5em;
-            font-weight: 700;
-            color      : $light;
-            padding    : 2% 0 0 10%;
-        }
-
-        p {
-            width : 80%;
-            margin: 1% auto;
-        }
-
-        div.languages {
-            margin: 2% 10% 2% 5%;
-        }
-
-        div.sports {
-            margin: 2% 7% 2% 8%;
-        }
-
-        div.sew {
-            margin: 2% 4% 2% 11%;
-        }
-
-        div.fun {
-            padding   : 1%;
+        div.otherjobs {
+            color     : $light;
+            width     : 80%;
+            margin    : 0 auto;
             text-align: justify;
-            box-shadow: 0 0 20px #222e35;
 
-            span {
-                font-weight: 600;
-                color      : $blue-light;
-            }
+            ul {
+                div.jobtitle {
+                    font-size    : 1.2em;
+                    font-weight  : 700;
+                    text-align   : end;
+                    border-bottom: 1px solid;
+                    margin-bottom: 2%;
+                }
 
-            a {
-                text-decoration: none;
-                color          : $blue-light;
+                padding      : 3%;
+                margin-bottom: 3%;
+                box-shadow   : 0 0 20px $shadow1;
 
-                &:hover {
-                    font-size: 1.1em;
+                li {
+                    padding: 1% 0 1% 3%;
+
+                    span {
+                        font-weight: 600;
+                    }
                 }
             }
         }
     }
+}
 
-    footer {
-        background-color: $blue-light;
-        color           : $light;
-        font-size       : 0.8em;
-        text-align      : center;
-        padding         : 2% 0;
+section.interests {
+    margin          : 0;
+    padding         : 1% 0 3%;
+    background-color: $blue;
+    color           : $light;
+
+    div.outside {
+        font-size  : 1.5em;
+        font-weight: 700;
+        color      : $light;
+        padding    : 2% 0 0 10%;
+    }
+
+    p {
+        width : 80%;
+        margin: 1% auto;
+    }
+
+    div.languages {
+        margin: 2% 10% 2% 5%;
+    }
+
+    div.sports {
+        margin: 2% 7% 2% 8%;
+    }
+
+    div.sew {
+        margin: 2% 4% 2% 11%;
+    }
+
+    div.fun {
+        padding   : 1%;
+        text-align: justify;
+        box-shadow: 0 0 20px #222e35;
+
+        span {
+            font-weight: 600;
+            color      : $blue-light;
+        }
 
         a {
             text-decoration: none;
-            color          : $blue;
+            color          : $blue-light;
 
             &:hover {
-                color: $gold;
+                font-size: 1.1em;
             }
+        }
+    }
+}
+
+footer {
+    background-color: $blue-light;
+    color           : $light;
+    font-size       : 0.8em;
+    text-align      : center;
+    padding         : 2% 0;
+
+    a {
+        text-decoration: none;
+        color          : $blue;
+
+        &:hover {
+            color: $gold;
         }
     }
 }
