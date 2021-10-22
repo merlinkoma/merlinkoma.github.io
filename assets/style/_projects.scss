@@ -1,0 +1,48 @@
+h2.projects-section-title{
+    margin : 1% 0 2% 5%;
+}
+main.projects-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+    section.project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2% 0;
+        
+        div.project-title{
+            font-size: 2.5rem;
+            color: $blue;
+            padding: 0 0 5% 0;
+        }
+
+        a{
+            img{
+                width: 20vw;
+                height: 20vw;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow    : 0 0 20px $blue;
+                &:hover{
+                    box-shadow    : 0 0 40px $blue;           
+                }
+            }
+        }
+
+        div.project-description{
+            width: 100%;
+            padding: 5%;
+            font-size: 1.2rem;
+            text-align: center;
+            color: $blue;
+            a{
+                color: $light;
+            }
+        }
+    }
+}

@@ -321,6 +321,55 @@ div.banner div.name div.line {
   margin: 15px auto;
 }
 
+h2.projects-section-title {
+  margin: 1% 0 2% 5%;
+}
+
+main.projects-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+main.projects-ctn section.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2% 0;
+}
+main.projects-ctn section.project div.project-title {
+  font-size: 2.5rem;
+  color: #263741;
+  padding: 0 0 5% 0;
+}
+main.projects-ctn section.project a img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px #263741;
+}
+main.projects-ctn section.project a img:hover {
+  box-shadow: 0 0 40px #263741;
+}
+main.projects-ctn section.project div.project-description {
+  width: 100%;
+  padding: 5%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #263741;
+}
+main.projects-ctn section.project div.project-description a {
+  color: #F1F1ED;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main {
   font-family: Montserrat Alternates;
 }
