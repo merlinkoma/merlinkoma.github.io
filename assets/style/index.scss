@@ -143,6 +143,10 @@ main {
 
             div.github {
                 display     : flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
                 padding-left: 2vw;
 
                 h2 {
@@ -151,6 +155,14 @@ main {
                     padding-left: 10%;
                     margin      : 2% 0;
                     font-weight : 600;
+                    width: 90%;
+                }
+
+                a{
+                    width: 10%;
+                    img{
+                        width: 3vw;
+                    }
                 }
             }
         }

@@ -337,7 +337,7 @@ main.projects-ctn section.project {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 2% 0;
+  margin: 0 5% 2%;
 }
 main.projects-ctn section.project div.project-title {
   font-size: 2.5rem;
@@ -360,9 +360,15 @@ main.projects-ctn section.project div.project-description {
   font-size: 1.2rem;
   text-align: center;
   color: #263741;
+  display: flex;
+  flex-direction: column;
 }
 main.projects-ctn section.project div.project-description a {
   color: #F1F1ED;
+}
+main.projects-ctn section.project div.project-description span.smaller {
+  font-size: 1rem;
+  margin: 5% 0;
 }
 
 a {
@@ -483,6 +489,10 @@ main section#main section.devweb div.languagesicons div.library div#divicons2 im
 }
 main section#main section.devweb div.github {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
   padding-left: 2vw;
 }
 main section#main section.devweb div.github h2 {
@@ -491,6 +501,13 @@ main section#main section.devweb div.github h2 {
   padding-left: 10%;
   margin: 2% 0;
   font-weight: 600;
+  width: 90%;
+}
+main section#main section.devweb div.github a {
+  width: 10%;
+}
+main section#main section.devweb div.github a img {
+  width: 3vw;
 }
 main section#main section.slide {
   font-weight: bold;
