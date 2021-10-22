@@ -295,6 +295,61 @@ div.banner div.name div.line {
   margin: 15px auto;
 }
 
+h2.projects-section-title {
+  margin: 1% 0 2% 5%;
+}
+
+main.projects-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+main.projects-ctn section.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5% 2%;
+}
+main.projects-ctn section.project div.project-title {
+  font-size: 2.5rem;
+  color: #263741;
+  padding: 0 0 5% 0;
+}
+main.projects-ctn section.project a img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px #263741;
+}
+main.projects-ctn section.project a img:hover {
+  box-shadow: 0 0 40px #263741;
+}
+main.projects-ctn section.project div.project-description {
+  width: 100%;
+  padding: 5%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #263741;
+  display: flex;
+  flex-direction: column;
+}
+main.projects-ctn section.project div.project-description a {
+  color: #F1F1ED;
+}
+main.projects-ctn section.project div.project-description span.smaller {
+  font-size: 1rem;
+  margin: 5% 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main {
   font-family: Montserrat Alternates;
 }
@@ -408,6 +463,10 @@ main section#main section.devweb div.languagesicons div.library div#divicons2 im
 }
 main section#main section.devweb div.github {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
   padding-left: 2vw;
 }
 main section#main section.devweb div.github h2 {
@@ -416,6 +475,13 @@ main section#main section.devweb div.github h2 {
   padding-left: 10%;
   margin: 2% 0;
   font-weight: 600;
+  width: 90%;
+}
+main section#main section.devweb div.github a {
+  width: 10%;
+}
+main section#main section.devweb div.github a img {
+  width: 3vw;
 }
 main section#main section.slide {
   font-weight: bold;
